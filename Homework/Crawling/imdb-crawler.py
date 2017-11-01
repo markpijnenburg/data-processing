@@ -1,6 +1,6 @@
 #!/usr/bin/env python
-# Name:
-# Student number:
+# Name: Mark Pijnenburg
+# Student number: 11841117
 '''
 This script crawls the IMDB top 250 movies.
 '''
@@ -27,6 +27,7 @@ BACKUP_DIR = os.path.join(SCRIPT_DIR, 'HTML_BACKUPS')
 # Unicode reading/writing functionality for the Python CSV module, taken
 # from the Python.org csv module documentation (very slightly adapted).
 # Source: http://docs.python.org/2/library/csv.html (retrieved 2014-03-09).
+
 
 class UTF8Recoder(object):
     """
@@ -91,6 +92,7 @@ class UnicodeWriter(object):
 
 # --------------------------------------------------------------------------
 # Utility functions (no need to edit):
+
 
 def create_dir(directory):
     '''
@@ -167,7 +169,7 @@ def main():
     # Make backup of the IMDB top 250 movies page
     print 'Access top 250 page, making backup ...'
     top_250_url = URL(TOP_250_URL)
-    top_250_html = top_250_url.download(cached=True)
+    top_250_html = top_250_url.download(cached=True, timeout=100)
     make_backup(os.path.join(BACKUP_DIR, 'index.html'), top_250_html)
 
     # extract the top 250 movies
@@ -179,7 +181,7 @@ def main():
     for i, url in enumerate(url_strings):  # Enumerate, a great Python trick!
         print 'Scraping movie %d ...' % i
         # Grab web page
-        movie_html = URL(url).download(cached=True)
+        movie_html = URL(url).download(cached=True, timeout=100)
 
         # Extract relevant information for each movie
         movie_dom = DOM(movie_html)
@@ -210,20 +212,22 @@ def scrape_top_250(url):
         IMDB, note that these URLS must be absolute (i.e. include the http
         part, the domain part and the path part).
     '''
+
+    # Init empty list for URLs/
     movie_urls = []
-    top_movies_html = URL(url).download(cached=True)
+
+    # Store URL into variable.
+    top_movies_html = URL(url).download(cached=True, timeout=100)
+
+    # Store DOM into variable.
     top_movies_dom = DOM(top_movies_html)
+
+    # Store all absolute hyperlinks of movies in list.
     for hyperlink in top_movies_dom("td.titleColumn a"):
-        movie_urls.append(abs(hyperlink.attributes.get('href',''), base=url.redirect or url.string))
-        # print(abs(hyperlink.attributes.get('href',''), base=url.redirect or url.string))
+        movie_urls.append(abs(hyperlink.attributes.get('href', ''),
+                              base=url.redirect or url.string))
 
-    # print(movie_urls)
-    # YOUR SCRAPING CODE GOES HERE, ALL YOU ARE LOOKING FOR ARE THE ABSOLUTE
-    # URLS TO EACH MOVIE'S IMDB PAGE, ADD THOSE TO THE LIST movie_urls.
-
-
-
-    # return the list of URLs of each movie's page on IMDB
+    # Return the list of URLs of each movie's page on IMDB.
     return movie_urls
 
 
@@ -242,25 +246,46 @@ def scrape_movie_page(dom):
         several), actor(s) (semicolon separated if several), rating, number
         of ratings.
     '''
-    # YOUR SCRAPING CODE GOES HERE:
+    # Scraping title from DOM
     title = plaintext(dom("div.title_wrapper h1")[0].content)[:-7]
-    duration = plaintext(dom("time[itemprop='duration']")[0].content).replace("min", "").replace("h", "").split()
-    if len(duration) == 2:
-        duration = (duration[0] * 60) + duration[1]
-    else:
-        duration = duration[0]
-    print(title)
-    print(duration)
 
+    # Scraping duration from DOM
+    duration = dom("div.subtext time[itemprop='duration']")[0].attributes.get('datetime')[2:-1]
 
-    # Return everything of interest for this movie (all strings as specified
-    # in the docstring of this function).
+    genres = ";".join([plaintext(genre.content) for genre in dom("span[itemprop='genre']")])
+
+    directors = ";".join([plaintext(director.content) for director in dom("span[itemprop='director'] a")])
+    # for director in dom("span[itemprop='director'] a"):
+    #     directors.append(plaintext(director.content))
+    # directors = ";".join(directors)
+
+    writers = ";".join([plaintext(writer.content) for writer in dom("div.credit_summary_item span[itemprop='creator'] a")])
+    # for writer in dom("div.credit_summary_item span[itemprop='creator'] a"):
+    #     writers.append(plaintext(writer.content))
+    # writers = ";".join(writers)
+
+    actors = ";".join([plaintext(actor.content) for actor in dom("div.credit_summary_item span[itemprop='actors'] a")])
+    # for actor in dom("div.credit_summary_item span[itemprop='actors'] a"):
+    #     actors.append(plaintext(actor.content))
+    # actors = ";".join(actors)
+
+    rating = plaintext(dom("div.ratingValue span[itemprop='ratingValue']")[0].content)
+
+    n_ratings = plaintext(dom("span[itemprop='ratingCount']")[0].content)
+
+    # print(title)
+    # print(duration)
+    # print(genres)
+    # print(directors)
+    # print(writers)
+    # print(actors)
+    # print(rating)
+    # print(n_ratings)
+
     return title, duration, genres, directors, writers, actors, rating, \
         n_ratings
 
 
 if __name__ == '__main__':
-    main()  # call into the progam
-
-    # If you want to test the functions you wrote, you can do that here:
-    # ...
+    # Call into the progam.
+    main()
