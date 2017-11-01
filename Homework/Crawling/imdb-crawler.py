@@ -14,7 +14,7 @@ import errno
 
 # Third party library imports:
 import pattern
-from pattern.web import URL, DOM
+from pattern.web import URL, DOM, plaintext, abs
 
 # --------------------------------------------------------------------------
 # Constants:
@@ -113,7 +113,7 @@ def create_dir(directory):
             pass
         else:
             # All errors other than an already exising backup directory
-            # are not handled, so the exception is re-raised and the 
+            # are not handled, so the exception is re-raised and the
             # script will crash here.
             raise
 
@@ -211,6 +211,13 @@ def scrape_top_250(url):
         part, the domain part and the path part).
     '''
     movie_urls = []
+    top_movies_html = URL(url).download(cached=True)
+    top_movies_dom = DOM(top_movies_html)
+    for hyperlink in top_movies_dom("td.titleColumn a"):
+        movie_urls.append(abs(hyperlink.attributes.get('href',''), base=url.redirect or url.string))
+        # print(abs(hyperlink.attributes.get('href',''), base=url.redirect or url.string))
+
+    # print(movie_urls)
     # YOUR SCRAPING CODE GOES HERE, ALL YOU ARE LOOKING FOR ARE THE ABSOLUTE
     # URLS TO EACH MOVIE'S IMDB PAGE, ADD THOSE TO THE LIST movie_urls.
 
@@ -230,12 +237,20 @@ def scrape_movie_page(dom):
 
     Returns:
         A list of strings representing the following (in order): title, year,
-        duration, genre(s) (semicolon separated if several), director(s) 
+        duration, genre(s) (semicolon separated if several), director(s)
         (semicolon separated if several), writer(s) (semicolon separated if
         several), actor(s) (semicolon separated if several), rating, number
         of ratings.
     '''
     # YOUR SCRAPING CODE GOES HERE:
+    title = plaintext(dom("div.title_wrapper h1")[0].content)[:-7]
+    duration = plaintext(dom("time[itemprop='duration']")[0].content).replace("min", "").replace("h", "").split()
+    if len(duration) == 2:
+        duration = (duration[0] * 60) + duration[1]
+    else:
+        duration = duration[0]
+    print(title)
+    print(duration)
 
 
     # Return everything of interest for this movie (all strings as specified
