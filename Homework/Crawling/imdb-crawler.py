@@ -246,42 +246,40 @@ def scrape_movie_page(dom):
         several), actor(s) (semicolon separated if several), rating, number
         of ratings.
     '''
-    # Scraping title from DOM
+    # Scraping title from DOM.
     title = plaintext(dom("div.title_wrapper h1")[0].content)[:-7]
 
-    # Scraping duration from DOM
-    duration = dom("div.subtext time[itemprop='duration']")[0].attributes.get('datetime')[2:-1]
+    # Scraping duration from DOM.
+    duration = dom("div.subtext time[itemprop='duration']\
+                   ")[0].attributes.get('datetime')[2:-1]
 
-    genres = ";".join([plaintext(genre.content) for genre in dom("span[itemprop='genre']")])
+    # Scraping genres from DOM.
+    genres = ";".join([plaintext(genre.content) for
+                       genre in dom("span[itemprop='genre']")])
 
-    directors = ";".join([plaintext(director.content) for director in dom("span[itemprop='director'] a")])
-    # for director in dom("span[itemprop='director'] a"):
-    #     directors.append(plaintext(director.content))
-    # directors = ";".join(directors)
+    # Scraping directors from DOM.
+    directors = ";".join([plaintext(director.content) for
+                          director in dom("span[itemprop='director'] a")])
 
-    writers = ";".join([plaintext(writer.content) for writer in dom("div.credit_summary_item span[itemprop='creator'] a")])
-    # for writer in dom("div.credit_summary_item span[itemprop='creator'] a"):
-    #     writers.append(plaintext(writer.content))
-    # writers = ";".join(writers)
+    # Scraping writers from DOM.
+    writers = ";".join([plaintext(writer.content) for
+                        writer in dom("div.credit_summary_item\
+                                      span[itemprop='creator'] a")])
 
-    actors = ";".join([plaintext(actor.content) for actor in dom("div.credit_summary_item span[itemprop='actors'] a")])
-    # for actor in dom("div.credit_summary_item span[itemprop='actors'] a"):
-    #     actors.append(plaintext(actor.content))
-    # actors = ";".join(actors)
+    # Scraping actors from DOM.
+    actors = ";".join([plaintext(actor.content) for
+                       actor in dom("div.credit_summary_item\
+                                    span[itemprop='actors'] a")])
 
-    rating = plaintext(dom("div.ratingValue span[itemprop='ratingValue']")[0].content)
+    # Scraping rating from DOM.
+    rating = plaintext(dom("div.ratingValue\
+                           span[itemprop='ratingValue']")[0].content)
 
-    n_ratings = plaintext(dom("span[itemprop='ratingCount']")[0].content)
+    # Scraping number of ratings from DOM.
+    n_ratings = plaintext(dom("span[itemprop='ratingCount']\
+                              ")[0].content).replace(",", "")
 
-    # print(title)
-    # print(duration)
-    # print(genres)
-    # print(directors)
-    # print(writers)
-    # print(actors)
-    # print(rating)
-    # print(n_ratings)
-
+    # Return appropriate values.
     return title, duration, genres, directors, writers, actors, rating, \
         n_ratings
 
