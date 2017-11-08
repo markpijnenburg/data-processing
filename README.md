@@ -28,7 +28,13 @@ Assignment: Scrape multiple websites/webpages using web-crawling.
 Scrapes the URLs from the top 250 movies from IMDB and crawl these pages to parse information into an CSV file. (Title, Runtime, Genre, Directors, Writers, Actors, Ratings, Number of Ratings)
 
 ### Week 2
-N/A
+
+#### Javascript intro
+
+Assignment: Create a line graph of the temperature at the De Bilt weather station, using no external libraries.
+
+##### Summary
+Loads temperature data via XMLHTTPRequest and plots this via pure JavaScript to a line graph. I used the average daytemperature for the complete year 2016.
 
 ### Week 3
 N/A

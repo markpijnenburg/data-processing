@@ -154,11 +154,11 @@ function createGraph(rawData){
   var graphTitleOffset = 440;
   var dateOffset = 1;
   var firstDay = 1;
+  var padding = 50;
   var canvas = document.getElementById("myCanvas");
   var context = canvas.getContext("2d");
   var width = canvas.width = 1000;
   var height = canvas.height = 450;
-  var padding = 50;
   var dataArray = parseRawData(rawData);
   var maxTemp = getMaxTemp(dataArray)
   var minTemp = getMinTemp(dataArray)
