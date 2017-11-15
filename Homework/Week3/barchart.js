@@ -5,9 +5,9 @@
 
 
 // Define size/margins of canvas
-var margin = {top: 10, right: 10, bottom: 40, left: 60};
+var margin = {top: 10, right: 10, bottom: 50, left: 60};
 var width = 1000 - margin.left - margin.right;
-var height = 500 - margin.top - margin.bottom;
+var height = 550 - margin.top - margin.bottom;
 
 // Define X and Y axis from chart
 var x = d3.scale.ordinal().rangeRoundBands([0, width], .05);
@@ -73,7 +73,7 @@ svg.append("text")
     .attr("class", "y axis")
     .attr("transform",
           "translate(" + (width/2) + " ," +
-                         (height + margin.top + 28) + ")")
+                         (height + margin.top + 35) + ")")
     .style("text-anchor", "middle")
     .text("Year");
 
