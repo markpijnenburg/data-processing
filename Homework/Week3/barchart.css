@@ -3,19 +3,23 @@ Student number: 11841117
 Minor Programmeren
 University of Amsterdam*/
 
+body {
+  background-color: #757575
+}
+
 /*Color of the bars in the chart*/
 .bar {
-  fill: #757575;
+  fill: #000654;
 }
 
 /*Changing color when hovering bars*/
 .bar:hover {
-  fill: #FF5722;
+  fill: #ff0000;
 }
 
 /*Text properties from chart*/
 .chart text {
-  fill: black;
+  fill: white;
   font: 15px sans-serif;
   text-anchor: middle;
 }
@@ -28,24 +32,33 @@ University of Amsterdam*/
 .axis path,
 .axis line {
   fill: none;
-  stroke: #000;
+  stroke: #FFFFFF;
   shape-rendering: crispEdges;
 }
 
 h1, h4, h5 {
   text-align: center;
   font-family: sans-serif;
+  color: white;
 }
 
+h4, h5 {
+  font-weight: normal;
+}
 /*Design of D3 tooltip*/
 .d3-tip {
+  font-size: 13px;
   line-height: 1;
   font-weight: bold;
   font-family: sans-serif;
-  padding: 12px;
+  padding: 4px;
   background: #212121;
   color: #fff;
   border-radius: 2px;
+}
+
+.d3-tip text {
+  font-size: 5px;
 }
 
 /* Creates a small triangle extender for the tooltip */
@@ -59,6 +72,7 @@ h1, h4, h5 {
   content: "\25BC";
   position: absolute;
   text-align: center;
+
 }
 
 /* Style northward tooltips differently */

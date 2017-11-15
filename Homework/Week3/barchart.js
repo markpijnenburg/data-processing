@@ -3,11 +3,10 @@
 // Minor Programmeren
 // University of Amsterdam
 
-
 // Define size/margins of canvas
-var margin = {top: 10, right: 10, bottom: 50, left: 60};
-var width = 1000 - margin.left - margin.right;
-var height = 550 - margin.top - margin.bottom;
+var margin = {top: 10, right: 10, bottom: 70, left: 70};
+var width = 1500 - margin.left - margin.right;
+var height = 500 - margin.top - margin.bottom;
 
 // Define X and Y axis from chart
 var x = d3.scale.ordinal().rangeRoundBands([0, width], .05);
@@ -38,10 +37,11 @@ d3.json("data.json", function(error, data){
 x.domain(data.map(function(d) { return d.year; }));
 
 // Define domain Y axis
-y.domain([0, 100]);
+y.domain([0, d3.max(data, function(d) { return d.value; })]);
+
 
 // Define D3 tooltip
-var tip = d3.tip().attr('class', 'd3-tip').html(function(d) { return d.value + "%"; });
+var tip = d3.tip().attr('class', 'd3-tip').html(function(d) { return d.value;});
 svg.call(tip);
 
 //  Add X axis to canvas
@@ -51,9 +51,9 @@ svg.append("g")
     .call(xAxis)
   .selectAll("text")
     .style("text-anchor", "end")
-    .attr("dx", "1em")
-    .attr("dy", "1em")
-    .attr("transform", "rotate(0)");
+    .attr("dx", "-0.5em")
+    .attr("dy", "-0.25em")
+    .attr("transform", "rotate(-90)");
 
 // Add Y axis to canvas
 svg.append("g")
@@ -61,20 +61,22 @@ svg.append("g")
     .call(yAxis)
   .append("text")
     .attr("transform", "rotate(-90)")
-    .attr("y", -30)
-    .attr("x", -200)
+    .attr("y", -45)
+    .attr("x", -100)
     .attr("dy", "-.71em")
     .style("text-anchor", "end")
     .style("font", "15px sans-serif")
-    .text("Percentage");
+    .text("Number of casulties each year")
+    .style("font-weight", "bold");
 
 // Add "year" text to X axis
 svg.append("text")
     .attr("class", "y axis")
     .attr("transform",
-          "translate(" + (width/2) + " ," +
-                         (height + margin.top + 35) + ")")
+          "translate(" + ((width/2) - 30) + " ," +
+                         (height + margin.top + 60) + ")")
     .style("text-anchor", "middle")
+    .style("font-weight", "bold")
     .text("Year");
 
 // Add bar based on data to canvas
@@ -84,7 +86,7 @@ svg.selectAll("bar")
     .attr("class", "bar")
     .attr("x", function(d) { return x(d.year); })
     .attr("width", x.rangeBand())
-    .attr("y", function(d) { return y(d.value); })
+    .attr("y", function(d) { return (y(d.value) - 1); })
     .attr("height", function(d) { return height - y(d.value); })
     .on("mouseover", tip.show)
     .on("mouseout", tip.hide);
