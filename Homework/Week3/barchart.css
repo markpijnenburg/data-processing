@@ -1,0 +1,75 @@
+/*Name: Mark Pijnenburg
+Student number: 11841117
+Minor Programmeren
+University of Amsterdam*/
+
+/*Color of the bars in the chart*/
+.bar {
+  fill: #757575;
+}
+
+/*Changing color when hovering bars*/
+.bar:hover {
+  fill: #FF5722;
+}
+
+/*Text properties from chart*/
+.chart text {
+  fill: black;
+  font: 15px sans-serif;
+  text-anchor: middle;
+}
+
+/*Properties from axis text*/
+.axis text {
+  font: 15x sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+h1, h4, h5 {
+  text-align: center;
+  font-family: sans-serif;
+}
+
+/*Design of D3 tooltip*/
+.d3-tip {
+  line-height: 1;
+  font-weight: bold;
+  font-family: sans-serif;
+  padding: 12px;
+  background: #212121;
+  color: #fff;
+  border-radius: 2px;
+}
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+  box-sizing: border-box;
+  display: inline;
+  font-size: 10px;
+  width: 100%;
+  line-height: 1;
+  color: #212121;
+  content: "\25BC";
+  position: absolute;
+  text-align: center;
+}
+
+/* Style northward tooltips differently */
+.d3-tip.n:after {
+  margin: -1px 0 0 0;
+  top: 100%;
+  left: 0;
+}
+
+/*Centre the chart on the webpage*/
+.chart {
+  display: block;
+  margin: 0 auto;
+}
