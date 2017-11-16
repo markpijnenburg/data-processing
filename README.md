@@ -2,7 +2,7 @@
 
 This is the repository of Data Processing, part of the bachelor Minor Progamming from the University of Amsterdam.
 
-[Link to Github index page](https://markpijnenburg.github.io/dataprocessing/)
+[Link to my Data Processing Github index page (For grading)](https://markpijnenburg.github.io/dataprocessing/)
 
 ## Homework
 Homework assignments, divided by each course week.
