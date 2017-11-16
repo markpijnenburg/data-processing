@@ -37,7 +37,12 @@ Assignment: Create a line graph of the temperature at the De Bilt weather statio
 Loads temperature data via XMLHTTPRequest and plots this via pure JavaScript to a line graph. I used the average daytemperature for the complete year 2016.
 
 ### Week 3
-N/A
+#### Interactive barchart with D3
+
+Assignment: Implement an interactive barchart using D3. No other libraries then D3 are allowed.
+
+##### Summary
+Barchart is based on the number of casualities in the last 50 years from mass shootings in the USA. The data is loaded via a JSON file. I also implemented the D3 tooltip as an interactive part. Outside of the assignment, I animated the barchart a little bit with the built-in ease function.
 
 ### Week 4
 N/A
@@ -54,32 +59,6 @@ N/A
 ### Week 8
 N/A
 
-## Design
-Design assignments, created in a team.
-
-### Week 1
-N/A
-
-### Week 2
-N/A
-
-### Week 3
-N/A
-
-### Week 4
-N/A
-
-### Week 5
-N/A
-
-### Week 6
-N/A
-
-### Week 7
-N/A
-
-### Week 8
-N/A
 
 ## Author(s)
 
