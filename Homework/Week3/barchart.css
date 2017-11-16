@@ -4,7 +4,7 @@ Minor Programmeren
 University of Amsterdam*/
 
 body {
-  background-color: #757575
+  background-color: whitesmoke
 }
 
 /*Color of the bars in the chart*/
@@ -18,28 +18,27 @@ body {
 }
 
 /*Text properties from chart*/
-.chart text {
-  fill: white;
+.chart {
+  /*fill: white;*/
   font: 15px sans-serif;
   text-anchor: middle;
 }
 
 /*Properties from axis text*/
 .axis text {
-  font: 15x sans-serif;
+  font: 10px sans-serif;
 }
 
 .axis path,
 .axis line {
   fill: none;
-  stroke: #FFFFFF;
+  stroke: black;
   shape-rendering: crispEdges;
 }
 
 h1, h4, h5 {
   text-align: center;
   font-family: sans-serif;
-  color: white;
 }
 
 h4, h5 {
@@ -51,28 +50,30 @@ h4, h5 {
   line-height: 1;
   font-weight: bold;
   font-family: sans-serif;
+  text-align: center;
   padding: 4px;
-  background: #212121;
+  background: rgba(33, 33, 33, 0.9);
   color: #fff;
   border-radius: 2px;
 }
 
 .d3-tip text {
   font-size: 5px;
+  text-align: center;
+  color: black;
 }
 
 /* Creates a small triangle extender for the tooltip */
 .d3-tip:after {
   box-sizing: border-box;
   display: inline;
-  font-size: 10px;
+  font-size: 15px;
   width: 100%;
   line-height: 1;
-  color: #212121;
-  content: "\25BC";
+  color: #000654;
+  content: "\1f847";
   position: absolute;
   text-align: center;
-
 }
 
 /* Style northward tooltips differently */
@@ -86,4 +87,8 @@ h4, h5 {
 .chart {
   display: block;
   margin: 0 auto;
+}
+
+.cross {
+  color: #ff0000;
 }
