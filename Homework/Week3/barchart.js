@@ -46,7 +46,7 @@ function createBarChart(){
   // Define D3 tooltip
   var tip = d3.tip().attr('class', 'd3-tip').offset([-tickRectOffset, 0])
       .html(function(d) { return d.year.getFullYear() +
-        "<br><span class='cross'>🞦</span>" + d.value;});
+        "<br><span class='cross'>&#10010</span>" + d.value;});
   svg.call(tip);
 
   //  Add X axis to canvas
