@@ -13,7 +13,7 @@ function createBarChart(){
       d.value = Number(+d.value);
     });
 
-  // Define size/margins of canvas
+  // Define commonly used variables
   var margin = {top: 10, right: 10, bottom: 50, left: 60};
   var width = 960 - margin.left - margin.right;
   var height = 400 - margin.top - margin.bottom;

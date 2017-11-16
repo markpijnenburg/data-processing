@@ -3,7 +3,9 @@ Student number: 11841117
 Minor Programmeren
 University of Amsterdam*/
 
+/*Changes background color of page*/
 body {
+  text-align: center;
   background-color: whitesmoke
 }
 
@@ -29,6 +31,7 @@ body {
   font: 10px sans-serif;
 }
 
+/*Assing color of chartlines*/
 .axis path,
 .axis line {
   fill: none;
@@ -36,14 +39,16 @@ body {
   shape-rendering: crispEdges;
 }
 
+/*Heading fonts*/
 h1, h4, h5 {
-  text-align: center;
   font-family: sans-serif;
 }
 
+/*Heading font weight*/
 h4, h5 {
   font-weight: normal;
 }
+
 /*Design of D3 tooltip*/
 .d3-tip {
   font-size: 13px;
@@ -57,6 +62,7 @@ h4, h5 {
   border-radius: 2px;
 }
 
+/*D3 tooltip text*/
 .d3-tip text {
   font-size: 5px;
   text-align: center;
@@ -89,6 +95,7 @@ h4, h5 {
   margin: 0 auto;
 }
 
+/*Colors the cross in D3 tooltip*/
 .cross {
   color: #ff0000;
 }
