@@ -1,0 +1,251 @@
+title,runtime,genre(s),director(s),writer(s),actor(s),rating(s),number of rating(s)
+The Shawshank Redemption,142,Crime;Drama,Frank Darabont,Stephen King;Frank Darabont,Tim Robbins;Morgan Freeman;Bob Gunton,9.3,1086859
+The Godfather,175,Crime;Drama,Francis Ford Coppola,Mario Puzo;Francis Ford Coppola,Marlon Brando;Al Pacino;James Caan,9.2,797648
+The Godfather: Part II,200,Crime;Drama,Francis Ford Coppola,Francis Ford Coppola;Mario Puzo,Al Pacino;Robert De Niro;Robert Duvall,9.1,523447
+Pulp Fiction,154,Crime;Drama;Thriller,Quentin Tarantino,Quentin Tarantino;Roger Avary,John Travolta;Uma Thurman;Samuel L. Jackson,9.0,884869
+"Il buono, il brutto, il cattivo.",161,Adventure;Western,Sergio Leone,Luciano Vincenzoni;Sergio Leone,Clint Eastwood;Eli Wallach;Lee Van Cleef,9.0,344162
+The Dark Knight,152,Action;Crime;Drama,Christopher Nolan,Jonathan Nolan;Christopher Nolan,Christian Bale;Heath Ledger;Aaron Eckhart,9.0,1113911
+12 Angry Men,96,Drama,Sidney Lumet,Reginald Rose,Henry Fonda;Lee J. Cobb;Martin Balsam,8.9,283566
+Schindler's List,195,Biography;Drama;History,Steven Spielberg,Thomas Keneally;Steven Zaillian,Liam Neeson;Ralph Fiennes;Ben Kingsley,8.9,581263
+The Lord of the Rings: The Return of the King,201,Action;Adventure;Fantasy,Peter Jackson,J.R.R. Tolkien;Fran Walsh,Elijah Wood;Viggo Mortensen;Ian McKellen,8.9,820117
+Fight Club,139,Drama,David Fincher,Chuck Palahniuk;Jim Uhls,Brad Pitt;Edward Norton;Helena Bonham Carter,8.9,871701
+Star Wars: Episode V - The Empire Strikes Back,124,Action;Adventure;Sci-Fi,Irvin Kershner,Leigh Brackett;Lawrence Kasdan,Mark Hamill;Harrison Ford;Carrie Fisher,8.8,549319
+The Lord of the Rings: The Fellowship of the Ring,178,Action;Adventure;Fantasy,Peter Jackson,J.R.R. Tolkien;Fran Walsh,Elijah Wood;Ian McKellen;Orlando Bloom,8.9,847014
+One Flew Over the Cuckoo's Nest,133,Drama,Milos Forman,Lawrence Hauben;Bo Goldman,Jack Nicholson;Louise Fletcher;Michael Berryman,8.8,477257
+Goodfellas,146,Biography;Crime;Drama,Martin Scorsese,Nicholas Pileggi;Nicholas Pileggi,Robert De Niro;Ray Liotta;Joe Pesci,8.8,498773
+Inception,148,Action;Adventure;Mystery,Christopher Nolan,Christopher Nolan,Leonardo DiCaprio;Joseph Gordon-Levitt;Ellen Page,8.8,909172
+Shichinin no samurai,207,Action;Drama,Akira Kurosawa,Akira Kurosawa;Shinobu Hashimoto,Toshirô Mifune;Takashi Shimura;Keiko Tsushima,8.8,168518
+Star Wars: Episode IV - A New Hope,121,Action;Adventure;Fantasy,George Lucas,George Lucas,Mark Hamill;Harrison Ford;Carrie Fisher,8.8,616930
+Forrest Gump,142,Drama;Romance,Robert Zemeckis,Winston Groom;Eric Roth,Tom Hanks;Robin Wright;Gary Sinise,8.8,770618
+The Matrix,136,Action;Adventure;Sci-Fi,Andy Wachowski;Lana Wachowski,Andy Wachowski;Lana Wachowski,Keanu Reeves;Laurence Fishburne;Carrie-Anne Moss,8.7,818503
+The Lord of the Rings: The Two Towers,179,Action;Adventure;Fantasy,Peter Jackson,J.R.R. Tolkien;Fran Walsh,Elijah Wood;Ian McKellen;Viggo Mortensen,8.8,737385
+Cidade de Deus,130,Crime;Drama,Fernando Meirelles;Kátia Lund,Paulo Lins;Bráulio Mantovani,Alexandre Rodrigues;Matheus Nachtergaele;Leandro Firmino,8.7,374020
+C'era una volta il West,175,Adventure;Western,Sergio Leone,Sergio Leone;Sergio Donati,Henry Fonda;Charles Bronson;Claudia Cardinale,8.7,153604
+Se7en,127,Crime;Mystery;Thriller,David Fincher,Andrew Kevin Walker,Morgan Freeman;Brad Pitt;Kevin Spacey,8.7,670100
+The Silence of the Lambs,118,Crime;Drama;Thriller,Jonathan Demme,Thomas Harris;Ted Tally,Jodie Foster;Anthony Hopkins;Lawrence A. Bonney,8.6,565322
+Casablanca,102,Drama;Romance;War,Michael Curtiz,Julius J. Epstein;Philip G. Epstein,Humphrey Bogart;Ingrid Bergman;Paul Henreid,8.7,290310
+The Usual Suspects,106,Crime;Mystery;Thriller,Bryan Singer,Christopher McQuarrie,Kevin Spacey;Gabriel Byrne;Chazz Palminteri,8.7,509038
+Indiana Jones and the Raiders of the Lost Ark,115,Action;Adventure,Steven Spielberg,Lawrence Kasdan;George Lucas,Harrison Ford;Karen Allen;Paul Freeman,8.6,462901
+It's a Wonderful Life,130,Drama;Family;Fantasy,Frank Capra,Frances Goodrich;Albert Hackett,James Stewart;Donna Reed;Lionel Barrymore,8.7,192762
+Rear Window,112,Mystery;Thriller,Alfred Hitchcock,John Michael Hayes;Cornell Woolrich,James Stewart;Grace Kelly;Wendell Corey,8.6,223569
+Psycho,109,Horror;Mystery;Thriller,Alfred Hitchcock,Joseph Stefano;Robert Bloch,Anthony Perkins;Janet Leigh;Vera Miles,8.6,288224
+Léon,110,Crime;Drama;Thriller,Luc Besson,Luc Besson,Jean Reno;Gary Oldman;Natalie Portman,8.7,485972
+Sunset Blvd.,110,Drama;Film-Noir,Billy Wilder,Charles Brackett;Billy Wilder,William Holden;Gloria Swanson;Erich von Stroheim,8.6,99420
+American History X,119,Crime;Drama,Tony Kaye,David McKenna,Edward Norton;Edward Furlong;Beverly D'Angelo,8.6,532118
+Memento,113,Mystery;Thriller,Christopher Nolan,Christopher Nolan;Jonathan Nolan,Guy Pearce;Carrie-Anne Moss;Joe Pantoliano,8.6,589932
+Terminator 2: Judgment Day,137,Action;Sci-Fi;Thriller,James Cameron,James Cameron;William Wisher Jr.,Arnold Schwarzenegger;Linda Hamilton;Edward Furlong,8.5,509479
+Saving Private Ryan,169,Action;Drama;War,Steven Spielberg,Robert Rodat,Tom Hanks;Matt Damon;Tom Sizemore,8.6,583028
+Apocalypse Now,153,Drama;War,Francis Ford Coppola,John Milius;Francis Ford Coppola,Martin Sheen;Marlon Brando;Robert Duvall,8.5,325584
+City Lights,87,Comedy;Drama;Romance,Charles Chaplin,Charles Chaplin,Charles Chaplin;Virginia Cherrill;Florence Lee,8.7,67356
+Dr. Strangelove: How I Learned to Stop Worrying and Love the Bomb,95,Comedy;Sci-Fi;War,Stanley Kubrick,Stanley Kubrick;Terry Southern,Peter Sellers;George C. Scott;Sterling Hayden,8.6,257830
+De reis van Chihiro,125,Animation;Adventure;Family,Hayao Miyazaki,Hayao Miyazaki,Daveigh Chase;Suzanne Pleshette;Miyu Irino,8.6,263532
+Alien,117,Horror;Sci-Fi,Ridley Scott,Dan O'Bannon;Ronald Shusett,Sigourney Weaver;Tom Skerritt;John Hurt,8.5,381977
+Modern Times,87,Comedy;Drama,Charles Chaplin,Charles Chaplin,Charles Chaplin;Paulette Goddard;Henry Bergman,8.6,87081
+La vita è bella,116,Comedy;Drama;Romance,Roberto Benigni,Vincenzo Cerami;Roberto Benigni,Roberto Benigni;Nicoletta Braschi;Giorgio Cantarini,8.6,256115
+North by Northwest,136,Action;Adventure;Crime,Alfred Hitchcock,Ernest Lehman,Cary Grant;Eva Marie Saint;James Mason,8.5,162322
+Back to the Future,116,Adventure;Comedy;Sci-Fi,Robert Zemeckis,Robert Zemeckis;Bob Gale,Michael J. Fox;Christopher Lloyd;Lea Thompson,8.5,464103
+The Pianist,150,Biography;Drama;War,Roman Polanski,Ronald Harwood;Wladyslaw Szpilman,Adrien Brody;Thomas Kretschmann;Frank Finlay,8.5,320225
+The Shining,144,Horror;Mystery,Stanley Kubrick,Stephen King;Stanley Kubrick,Jack Nicholson;Shelley Duvall;Danny Lloyd,8.5,406324
+Citizen Kane,119,Drama;Mystery,Orson Welles,Herman J. Mankiewicz;Orson Welles,Orson Welles;Joseph Cotten;Dorothy Comingore,8.5,224344
+The Departed,151,Crime;Drama;Thriller,Martin Scorsese,William Monahan;Alan Mak,Leonardo DiCaprio;Matt Damon;Jack Nicholson,8.5,579298
+M,117,Crime;Drama;Thriller,Fritz Lang,Thea von Harbou;Fritz Lang,Peter Lorre;Ellen Widmann;Inge Landgut,8.5,71986
+Paths of Glory,88,Drama;War,Stanley Kubrick,Stanley Kubrick;Calder Willingham,Kirk Douglas;Ralph Meeker;Adolphe Menjou,8.5,82656
+Gravity,91,Drama;Sci-Fi;Thriller,Alfonso Cuarón,Alfonso Cuarón;Jonás Cuarón,Sandra Bullock;George Clooney;Ed Harris,8.3,254333
+Intouchables,112,Biography;Comedy;Drama,Olivier Nakache;Eric Toledano,Olivier Nakache;Eric Toledano,François Cluzet;Omar Sy;Anne Le Ny,8.6,267004
+Vertigo,128,Mystery;Romance;Thriller,Alfred Hitchcock,Alec Coppel;Samuel A. Taylor,James Stewart;Kim Novak;Barbara Bel Geddes,8.5,171308
+American Beauty,122,Drama,Sam Mendes,Alan Ball,Kevin Spacey;Annette Bening;Thora Birch,8.5,587239
+Gladiator,155,Action;Adventure;Drama,Ridley Scott,David Franzoni;David Franzoni,Russell Crowe;Joaquin Phoenix;Connie Nielsen,8.5,640928
+The Green Mile,189,Crime;Drama;Fantasy,Frank Darabont,Stephen King;Frank Darabont,Tom Hanks;Michael Clarke Duncan;David Morse,8.5,482496
+Django Unchained,165,Adventure;Drama;Western,Quentin Tarantino,Quentin Tarantino,Jamie Foxx;Christoph Waltz;Leonardo DiCaprio,8.5,532635
+The Dark Knight Rises,165,Action;Crime;Thriller,Christopher Nolan,Jonathan Nolan;Christopher Nolan,Christian Bale;Tom Hardy;Anne Hathaway,8.6,732987
+Aliens,137,Action;Adventure;Sci-Fi,James Cameron,James Cameron;David Giler,Sigourney Weaver;Michael Biehn;Carrie Henn,8.5,345334
+Double Indemnity,107,Crime;Drama;Film-Noir,Billy Wilder,Billy Wilder;Raymond Chandler,Fred MacMurray;Barbara Stanwyck;Edward G. Robinson,8.5,69314
+Taxi Driver,113,Crime;Drama,Martin Scorsese,Paul Schrader,Robert De Niro;Jodie Foster;Cybill Shepherd,8.4,341012
+Das Leben der Anderen,137,Drama;Thriller,Florian Henckel von Donnersmarck,Florian Henckel von Donnersmarck,Ulrich Mühe;Martina Gedeck;Sebastian Koch,8.5,179695
+WALL·E,98,Animation;Adventure;Family,Andrew Stanton,Andrew Stanton;Pete Docter,Ben Burtt;Elissa Knight;Jeff Garlin,8.5,461708
+Toy Story 3,103,Animation;Adventure;Comedy,Lee Unkrich,John Lasseter;Andrew Stanton,Tom Hanks;Tim Allen;Joan Cusack,8.5,344724
+De dictator,125,Comedy;Drama;War,Charles Chaplin,Charles Chaplin,Charles Chaplin;Paulette Goddard;Jack Oakie,8.5,84501
+The Prestige,130,Drama;Mystery;Thriller,Christopher Nolan,Jonathan Nolan;Christopher Nolan,Christian Bale;Hugh Jackman;Scarlett Johansson,8.5,537138
+Le fabuleux destin d'Amélie Poulain,122,Comedy;Romance,Jean-Pierre Jeunet,Guillaume Laurant;Jean-Pierre Jeunet,Audrey Tautou;Mathieu Kassovitz;Rufus,8.5,370951
+A Clockwork Orange,136,Crime;Drama;Sci-Fi,Stanley Kubrick,Stanley Kubrick;Anthony Burgess,Malcolm McDowell;Patrick Magee;Michael Bates,8.4,377098
+Lawrence of Arabia,216,Adventure;Biography;Drama,David Lean,T.E. Lawrence;Robert Bolt,Peter O'Toole;Alec Guinness;Anthony Quinn,8.4,137274
+To Kill a Mockingbird,129,Crime;Drama;Mystery,Robert Mulligan,Harper Lee;Horton Foote,Gregory Peck;John Megna;Frank Overton,8.4,150741
+Reservoir Dogs,99,Crime;Thriller,Quentin Tarantino,Quentin Tarantino;Roger Avary,Harvey Keitel;Tim Roth;Michael Madsen,8.4,442630
+Das Boot,149,Action;Adventure;Drama,Wolfgang Petersen,Wolfgang Petersen;Lothar G. Buchheim,Jürgen Prochnow;Herbert Grönemeyer;Klaus Wennemann,8.5,124099
+Nuovo Cinema Paradiso,155,Drama,Giuseppe Tornatore,Giuseppe Tornatore;Giuseppe Tornatore,Philippe Noiret;Enzo Cannavale;Antonella Attili,8.5,99484
+De leeuwenkoning,89,Animation;Adventure;Drama,Roger Allers;Rob Minkoff,Irene Mecchi;Jonathan Roberts,Matthew Broderick;Jeremy Irons;James Earl Jones,8.5,392452
+The Treasure of the Sierra Madre,126,Action;Adventure;Drama,John Huston,John Huston;B. Traven,Humphrey Bogart;Walter Huston;Tim Holt,8.4,57853
+Requiem for a Dream,102,Drama,Darren Aronofsky,Hubert Selby Jr.;Hubert Selby Jr.,Ellen Burstyn;Jared Leto;Jennifer Connelly,8.4,402369
+Once Upon a Time in America,229,Crime;Drama,Sergio Leone,Harry Grey;Leonardo Benvenuti,Robert De Niro;James Woods;Elizabeth McGovern,8.4,155134
+Star Wars: Episode VI - Return of the Jedi,134,Action;Adventure;Fantasy,Richard Marquand,Lawrence Kasdan;George Lucas,Mark Hamill;Harrison Ford;Carrie Fisher,8.4,434046
+Braveheart,177,Action;Biography;Drama,Mel Gibson,Randall Wallace,Mel Gibson;Sophie Marceau;Patrick McGoohan,8.4,509623
+The Third Man,104,Film-Noir;Mystery;Thriller,Carol Reed,Graham Greene;Graham Greene,Orson Welles;Joseph Cotten;Alida Valli,8.4,84186
+Eternal Sunshine of the Spotless Mind,108,Drama;Romance;Sci-Fi,Michel Gondry,Charlie Kaufman;Michel Gondry,Jim Carrey;Kate Winslet;Tom Wilkinson,8.4,463635
+Oldeuboi,120,Drama;Mystery;Thriller,Chan-wook Park,Garon Tsuchiya;Nobuaki Minegishi,Min-sik Choi;Ji-tae Yu;Hye-jeong Kang,8.4,236640
+Full Metal Jacket,116,Drama;War,Stanley Kubrick,Gustav Hasford;Stanley Kubrick,Matthew Modine;R. Lee Ermey;Vincent D'Onofrio,8.4,325056
+L.A. Confidential,138,Crime;Drama;Mystery,Curtis Hanson,James Ellroy;Brian Helgeland,Kevin Spacey;Russell Crowe;Guy Pearce,8.3,312287
+Singin' in the Rain,103,Comedy;Musical;Romance,Stanley Donen;Gene Kelly,Adolph Green;Betty Comden,Gene Kelly;Donald O'Connor;Debbie Reynolds,8.4,105273
+Metropolis,153,Drama;Sci-Fi,Fritz Lang,Thea von Harbou;Thea von Harbou,Brigitte Helm;Alfred Abel;Gustav Fröhlich,8.4,78777
+Rashômon,88,Crime;Drama,Akira Kurosawa,Ryûnosuke Akutagawa;Akira Kurosawa,Toshirô Mifune;Machiko Kyô;Masayuki Mori,8.4,72253
+Ladri di biciclette,93,Drama,Vittorio De Sica,Luigi Bartolini;Cesare Zavattini,Lamberto Maggiorani;Enzo Staiola;Lianella Carell,8.4,61547
+Mononoke-hime,134,Animation;Adventure;Fantasy,Hayao Miyazaki,Hayao Miyazaki,Yôji Matsuda;Yuriko Ishida;Yûko Tanaka,8.5,145084
+Some Like It Hot,120,Comedy,Billy Wilder,Billy Wilder;I.A.L. Diamond,Marilyn Monroe;Tony Curtis;Jack Lemmon,8.4,126440
+All About Eve,138,Drama,Joseph L. Mankiewicz,Joseph L. Mankiewicz,Bette Davis;Anne Baxter;George Sanders,8.4,60063
+Chinatown,130,Crime;Drama;Mystery,Roman Polanski,Robert Towne,Jack Nicholson;Faye Dunaway;John Huston,8.3,156011
+Amadeus,160,Biography;Drama;Music,Milos Forman,Peter Shaffer;Peter Shaffer,F. Murray Abraham;Tom Hulce;Elizabeth Berridge,8.4,193264
+Witness for the Prosecution,116,Crime;Drama;Mystery,Billy Wilder,Agatha Christie;Billy Wilder,Tyrone Power;Marlene Dietrich;Charles Laughton,8.5,38840
+The Sting,129,Comedy;Crime;Drama,George Roy Hill,David S. Ward,Paul Newman;Robert Redford;Robert Shaw,8.4,124285
+Monty Python and the Holy Grail,91,Adventure;Comedy;Fantasy,Terry Gilliam;Terry Jones,Graham Chapman;John Cleese,Graham Chapman;John Cleese;Eric Idle,8.4,278105
+2001: A Space Odyssey,160,Adventure;Mystery;Sci-Fi,Stanley Kubrick,Stanley Kubrick;Arthur C. Clarke,Keir Dullea;Gary Lockwood;William Sylvester,8.3,288883
+The Apartment,125,Comedy;Drama;Romance,Billy Wilder,Billy Wilder;I.A.L. Diamond,Jack Lemmon;Shirley MacLaine;Fred MacMurray,8.4,75170
+Hotaru no haka,89,Animation;Drama;War,Isao Takahata,Akiyuki Nosaka;Isao Takahata,Tsutomu Tatsumi;Ayano Shiraishi;Akemi Yamaguchi,8.5,81645
+Unforgiven,131,Western,Clint Eastwood,David Webb Peoples,Clint Eastwood;Gene Hackman;Morgan Freeman,8.3,200794
+Indiana Jones and the Last Crusade,127,Action;Adventure,Steven Spielberg,Jeffrey Boam;George Lucas,Harrison Ford;Sean Connery;Alison Doody,8.3,355662
+Raging Bull,129,Biography;Drama;Sport,Martin Scorsese,Jake LaMotta;Joseph Carter,Robert De Niro;Cathy Moriarty;Joe Pesci,8.3,168246
+Die Hard,131,Action;Thriller,John McTiernan,Roderick Thorp;Jeb Stuart,Bruce Willis;Alan Rickman;Bonnie Bedelia,8.3,420646
+The Bridge on the River Kwai,161,Adventure;Drama;War,David Lean,Michael Wilson;Carl Foreman,William Holden;Alec Guinness;Jack Hawkins,8.3,107360
+Yôjinbô,110,Action;Adventure,Akira Kurosawa,Akira Kurosawa;Akira Kurosawa,Toshirô Mifune;Eijirô Tôno;Tatsuya Nakadai,8.4,52051
+Batman Begins,140,Action;Adventure;Crime,Christopher Nolan,Bob Kane;David S. Goyer,Christian Bale;Michael Caine;Ken Watanabe,8.3,642328
+Jodaeiye Nader az Simin,123,Drama,Asghar Farhadi,Asghar Farhadi,Peyman Moaadi;Leila Hatami;Sareh Bayat,8.5,100982
+Snatch.,104,Comedy;Crime,Guy Ritchie,Guy Ritchie,Jason Statham;Brad Pitt;Benicio Del Toro,8.4,419349
+Per qualche dollaro in più,132,Western,Sergio Leone,Sergio Leone;Fulvio Morsella,Clint Eastwood;Lee Van Cleef;Gian Maria Volonté,8.4,100859
+Inglourious Basterds,153,Adventure;Drama;War,Quentin Tarantino;Eli Roth,Quentin Tarantino,Brad Pitt;Diane Kruger;Eli Roth,8.3,543481
+Toy Story,81,Animation;Adventure;Comedy,John Lasseter,John Lasseter;Pete Docter,Tom Hanks;Tim Allen;Don Rickles,8.3,397771
+Mr. Smith Goes to Washington,129,Drama,Frank Capra,Sidney Buchman;Lewis R. Foster,James Stewart;Jean Arthur;Claude Rains,8.4,56748
+El laberinto del fauno,118,Drama;Fantasy;War,Guillermo del Toro,Guillermo del Toro,Ivana Baquero;Ariadna Gil;Sergi López,8.3,331536
+The Great Escape,172,Adventure;Drama;History,John Sturges,Paul Brickhill;James Clavell,Steve McQueen;James Garner;Richard Attenborough,8.3,116956
+Der Untergang,156,Biography;Drama;History,Oliver Hirschbiegel,Bernd Eichinger;Joachim Fest,Bruno Ganz;Alexandra Maria Lara;Ulrich Matthes,8.3,179073
+On the Waterfront,108,Crime;Drama,Elia Kazan,Budd Schulberg;Budd Schulberg,Marlon Brando;Karl Malden;Lee J. Cobb,8.3,72203
+Up,96,Animation;Adventure;Drama,Pete Docter;Bob Peterson,Pete Docter;Bob Peterson,Edward Asner;Jordan Nagai;John Ratzenberger,8.3,410717
+The Kid,68,Comedy;Drama;Family,Charles Chaplin,Charles Chaplin,Charles Chaplin;Edna Purviance;Jackie Coogan,8.4,38670
+Heat,170,Action;Crime;Drama,Michael Mann,Michael Mann,Al Pacino;Robert De Niro;Val Kilmer,8.3,315661
+The General,107,Action;Adventure;Comedy,Clyde Bruckman;Buster Keaton,Buster Keaton;Clyde Bruckman,Buster Keaton;Marion Mack;Glen Cavender,8.3,36457
+Ikiru,143,Drama,Akira Kurosawa,Akira Kurosawa;Shinobu Hashimoto,Takashi Shimura;Nobuo Kaneko;Shin'ichi Himori,8.4,28574
+Det sjunde inseglet,96,Drama;Fantasy,Ingmar Bergman,Ingmar Bergman;Ingmar Bergman,Max von Sydow;Gunnar Björnstrand;Bengt Ekerot,8.3,78368
+The Elephant Man,124,Biography;Drama,David Lynch,Christopher De Vore;Eric Bergren,Anthony Hopkins;John Hurt;Anne Bancroft,8.3,117017
+Scarface,170,Crime;Drama,Brian De Palma,Oliver Stone,Al Pacino;Michelle Pfeiffer;Steven Bauer,8.3,367830
+Blade Runner,117,Drama;Sci-Fi;Thriller,Ridley Scott,Hampton Fancher;David Webb Peoples,Harrison Ford;Rutger Hauer;Sean Young,8.3,342919
+The Maltese Falcon,100,Crime;Drama;Film-Noir,John Huston,John Huston;Dashiell Hammett,Humphrey Bogart;Mary Astor;Gladys George,8.2,84164
+Smultronstället,91,Drama,Ingmar Bergman,Ingmar Bergman,Victor Sjöström;Bibi Andersson;Ingrid Thulin,8.3,44062
+Rebecca,130,Drama;Mystery;Thriller,Alfred Hitchcock,Daphne Du Maurier;Robert E. Sherwood,Laurence Olivier;Joan Fontaine;George Sanders,8.3,64031
+Fargo,98,Crime;Drama;Thriller,Joel Coen;Ethan Coen,Ethan Coen;Joel Coen,William H. Macy;Frances McDormand;Steve Buscemi,8.2,302303
+Gran Torino,116,Drama,Clint Eastwood,Nick Schenk;Dave Johannson,Clint Eastwood;Bee Vang;Christopher Carley,8.2,393945
+Ran,162,Action;Drama;War,Akira Kurosawa,Akira Kurosawa;Hideo Oguni,Tatsuya Nakadai;Akira Terao;Jinpachi Nezu,8.3,57403
+The Big Lebowski,117,Comedy;Crime,Joel Coen;Ethan Coen,Ethan Coen;Joel Coen,Jeff Bridges;John Goodman;Julianne Moore,8.2,369852
+The Gold Rush,95,Adventure;Comedy;Family,Charles Chaplin,Charles Chaplin,Charles Chaplin;Mack Swain;Tom Murray,8.3,43892
+Het gebeurde op 'n avond,105,Comedy;Romance,Frank Capra,Robert Riskin;Samuel Hopkins Adams,Clark Gable;Claudette Colbert;Walter Connolly,8.3,45242
+Jagten,115,Drama,Thomas Vinterberg,Tobias Lindholm;Thomas Vinterberg,Mads Mikkelsen;Thomas Bo Larsen;Annika Wedderkopp,8.3,66220
+Cool Hand Luke,126,Crime;Drama,Stuart Rosenberg,Donn Pearce;Frank Pierson,Paul Newman;George Kennedy;Strother Martin,8.2,88428
+The Deer Hunter,182,Drama;War,Michael Cimino,Michael Cimino;Deric Washburn,Robert De Niro;Christopher Walken;John Cazale,8.2,170306
+Touch of Evil,95,Crime;Film-Noir;Thriller,Orson Welles,Orson Welles;Whit Masterson,Charlton Heston;Orson Welles;Janet Leigh,8.2,54313
+Demonen,114,Mystery;Thriller,Henri-Georges Clouzot,Pierre Boileau;Thomas Narcejac,Simone Signoret;Véra Clouzot;Paul Meurisse,8.3,28375
+"Lock, Stock and Two Smoking Barrels",107,Crime;Thriller,Guy Ritchie,Guy Ritchie,Jason Flemyng;Dexter Fletcher;Nick Moran,8.2,295911
+Good Will Hunting,126,Drama,Gus Van Sant,Matt Damon;Ben Affleck,Robin Williams;Matt Damon;Ben Affleck,8.2,399324
+Oordeel te Neurenberg,186,Drama;History;War,Stanley Kramer,Abby Mann;Abby Mann,Spencer Tracy;Burt Lancaster;Richard Widmark,8.3,27678
+The Sixth Sense,107,Drama;Mystery;Thriller,M. Night Shyamalan,M. Night Shyamalan,Bruce Willis;Haley Joel Osment;Toni Collette,8.2,503650
+Casino,178,Biography;Crime;Drama,Martin Scorsese,Nicholas Pileggi;Nicholas Pileggi,Robert De Niro;Sharon Stone;Joe Pesci,8.2,230118
+No Country for Old Men,122,Crime;Drama;Thriller,Ethan Coen;Joel Coen,Joel Coen;Ethan Coen,Tommy Lee Jones;Javier Bardem;Josh Brolin,8.2,422568
+Butch Cassidy and the Sundance Kid,110,Adventure;Biography;Crime,George Roy Hill,William Goldman,Paul Newman;Robert Redford;Katharine Ross,8.2,108333
+Gone with the Wind,238,Drama;Romance;War,Victor Fleming;George Cukor,Margaret Mitchell;Sidney Howard,Clark Gable;Vivien Leigh;Thomas Mitchell,8.2,156345
+Platoon,120,Action;Drama;War,Oliver Stone,Oliver Stone,Charlie Sheen;Tom Berenger;Willem Dafoe,8.2,212636
+Trainspotting,94,Crime;Drama,Danny Boyle,Irvine Welsh;John Hodge,Ewan McGregor;Ewen Bremner;Jonny Lee Miller,8.2,333551
+Kill Bill: Vol. 1,111,Action;Crime,Quentin Tarantino,Quentin Tarantino;Quentin Tarantino,Uma Thurman;David Carradine;Daryl Hannah,8.2,497120
+Sin City,124,Crime;Thriller,Frank Miller;Robert Rodriguez,Frank Miller,Mickey Rourke;Clive Owen;Bruce Willis,8.2,480765
+Jaws,124,Adventure;Horror;Thriller,Steven Spielberg,Peter Benchley;Carl Gottlieb,Roy Scheider;Robert Shaw;Richard Dreyfuss,8.1,283270
+The Thing,109,Horror;Mystery;Sci-Fi,John Carpenter,Bill Lancaster;John W. Campbell Jr.,Kurt Russell;Wilford Brimley;Keith David,8.2,184248
+The Wizard of Oz,102,Adventure;Family;Fantasy,Victor Fleming;George Cukor,Noel Langley;Florence Ryerson,Judy Garland;Frank Morgan;Ray Bolger,8.2,203941
+The Grapes of Wrath,129,Drama,John Ford,Nunnally Johnson;John Steinbeck,Henry Fonda;Jane Darwell;John Carradine,8.2,44411
+Strangers on a Train,101,Crime;Film-Noir;Thriller,Alfred Hitchcock,Raymond Chandler;Czenzi Ormonde,Farley Granger;Robert Walker;Ruth Roman,8.2,67587
+Hotel Rwanda,121,Biography;Drama;History,Terry George,Keir Pearson;Terry George,Don Cheadle;Sophie Okonedo;Joaquin Phoenix,8.2,190389
+Annie Hall,93,Comedy;Romance,Woody Allen,Woody Allen;Marshall Brickman,Woody Allen;Diane Keaton;Tony Roberts,8.2,134793
+El secreto de sus ojos,129,Drama;Mystery;Thriller,Juan José Campanella,Eduardo Sacheri;Juan José Campanella,Ricardo Darín;Soledad Villamil;Pablo Rago,8.3,79204
+Tonari no Totoro,86,Animation;Drama;Family,Hayao Miyazaki,Hayao Miyazaki,Hitoshi Takagi;Noriko Hidaka;Toshiyuki Amagasa,8.3,96740
+V for Vendetta,132,Action;Sci-Fi;Thriller,James McTeigue,Andy Wachowski;Lana Wachowski,Hugo Weaving;Natalie Portman;Rupert Graves,8.2,542469
+Warrior,140,Drama;Sport,Gavin O'Connor,Gavin O'Connor;Anthony Tambakis,Tom Hardy;Nick Nolte;Joel Edgerton,8.3,210918
+Finding Nemo,100,Animation;Adventure;Comedy,Andrew Stanton;Lee Unkrich,Andrew Stanton;Andrew Stanton,Albert Brooks;Ellen DeGeneres;Alexander Gould,8.2,436812
+Klokslag 12,85,Drama;Western,Fred Zinnemann,Carl Foreman;John W. Cunningham,Gary Cooper;Grace Kelly;Thomas Mitchell,8.2,59257
+Dial M for Murder,105,Crime;Thriller,Alfred Hitchcock,Frederick Knott;Frederick Knott,Ray Milland;Grace Kelly;Robert Cummings,8.2,70278
+Into the Wild,148,Adventure;Biography;Drama,Sean Penn,Sean Penn;Jon Krakauer,Emile Hirsch;Vince Vaughn;Catherine Keener,8.2,283243
+How to Train Your Dragon,98,Animation;Adventure;Comedy,Dean DeBlois;Chris Sanders,William Davies;Dean DeBlois,Jay Baruchel;Gerard Butler;Christopher Mintz-Plasse,8.2,274169
+Life of Brian,94,Comedy,Terry Jones,Graham Chapman;John Cleese,Graham Chapman;John Cleese;Michael Palin,8.2,193711
+Rush,123,Action;Biography;Drama,Ron Howard,Peter Morgan,Daniel Brühl;Chris Hemsworth;Olivia Wilde,8.3,106475
+The Avengers,143,Action;Fantasy,Joss Whedon,Joss Whedon;Zak Penn,Robert Downey Jr.;Chris Evans;Scarlett Johansson,8.2,616261
+Notorious,101,Drama;Film-Noir;Romance,Alfred Hitchcock,Ben Hecht,Cary Grant;Ingrid Bergman;Claude Rains,8.2,54901
+De beste jaren van ons leven,172,Drama;Romance;War,William Wyler,Robert E. Sherwood;MacKinlay Kantor,Fredric March;Dana Andrews;Myrna Loy,8.3,29124
+Network,121,Drama,Sidney Lumet,Paddy Chayefsky,Faye Dunaway;William Holden;Peter Finch,8.2,73485
+Million Dollar Baby,132,Drama;Sport,Clint Eastwood,Paul Haggis;F.X. Toole,Hilary Swank;Clint Eastwood;Morgan Freeman,8.1,324609
+There Will Be Blood,158,Drama,Paul Thomas Anderson,Paul Thomas Anderson;Upton Sinclair,Daniel Day-Lewis;Paul Dano;Ciarán Hinds,8.1,265904
+The Terminator,107,Action;Sci-Fi,James Cameron,James Cameron;Gale Anne Hurd,Arnold Schwarzenegger;Linda Hamilton;Michael Biehn,8.1,402288
+Ben Hur,212,Adventure;Drama,William Wyler,Lew Wallace;Karl Tunberg,Charlton Heston;Jack Hawkins;Stephen Boyd,8.2,112412
+Stand by Me,89,Adventure;Drama,Rob Reiner,Stephen King;Raynold Gideon,Wil Wheaton;River Phoenix;Corey Feldman,8.2,192858
+The King's Speech,118,Biography;Drama;History,Tom Hooper,David Seidler,Colin Firth;Geoffrey Rush;Helena Bonham Carter,8.1,313714
+Twelve Monkeys,129,Mystery;Sci-Fi;Thriller,Terry Gilliam,Chris Marker;David Webb Peoples,Bruce Willis;Madeleine Stowe;Brad Pitt,8.1,334561
+Les quatre cents coups,99,Crime;Drama,François Truffaut,François Truffaut;Marcel Moussy,Jean-Pierre Léaud;Albert Rémy;Claire Maurier,8.2,48592
+Groundhog Day,101,Comedy;Drama;Fantasy,Harold Ramis,Danny Rubin;Harold Ramis,Bill Murray;Andie MacDowell;Chris Elliott,8.1,299779
+The Night of the Hunter,93,Crime;Drama;Film-Noir,Charles Laughton;Robert Mitchum,Davis Grubb;James Agee,Robert Mitchum;Shelley Winters;Lillian Gish,8.2,46546
+Hauru no ugoku shiro,119,Animation;Adventure;Family,Hayao Miyazaki,Hayao Miyazaki;Diana Wynne Jones,Chieko Baishô;Takuya Kimura;Tatsuya Gashûin,8.2,130998
+The Big Sleep,114,Crime;Film-Noir;Mystery,Howard Hawks,William Faulkner;Leigh Brackett,Humphrey Bogart;Lauren Bacall;John Ridgely,8.1,48936
+Amores perros,154,Drama;Thriller,Alejandro González Iñárritu,Guillermo Arriaga,Emilio Echevarría;Gael García Bernal;Goya Toledo,8.2,127194
+Donnie Darko,113,Drama;Mystery;Sci-Fi,Richard Kelly,Richard Kelly,Jake Gyllenhaal;Jena Malone;Mary McDonnell,8.2,420129
+A Beautiful Mind,135,Biography;Drama,Ron Howard,Akiva Goldsman;Sylvia Nasar,Russell Crowe;Ed Harris;Jennifer Connelly,8.2,375573
+Mary and Max,92,Animation;Comedy;Drama,Adam Elliot,Adam Elliot,Toni Collette;Philip Seymour Hoffman;Eric Bana,8.2,73976
+Gandhi,191,Biography;Drama;History,Richard Attenborough,John Briley,Ben Kingsley;John Gielgud;Candice Bergen,8.1,118125
+Dog Day Afternoon,125,Crime;Drama,Sidney Lumet,P.F. Kluge;Thomas Moore,Al Pacino;John Cazale;Penelope Allen,8.1,134042
+The Bourne Ultimatum,115,Action;Crime;Thriller,Paul Greengrass,Tony Gilroy;Scott Z. Burns,Matt Damon;Édgar Ramírez;Joan Allen,8.1,341874
+The Killing,85,Crime;Film-Noir;Thriller,Stanley Kubrick,Stanley Kubrick;Jim Thompson,Sterling Hayden;Coleen Gray;Vince Edwards,8.1,46603
+The Graduate,106,Comedy;Drama;Romance,Mike Nichols,Calder Willingham;Buck Henry,Dustin Hoffman;Anne Bancroft;Katharine Ross,8.1,157401
+Persona,85,Drama;Mystery;Thriller,Ingmar Bergman,Ingmar Bergman,Bibi Andersson;Liv Ullmann;Margaretha Krook,8.2,39167
+The Princess Bride,98,Adventure;Comedy;Family,Rob Reiner,William Goldman;William Goldman,Cary Elwes;Mandy Patinkin;Robin Wright,8.2,217603
+The Hustler,134,Drama;Sport,Robert Rossen,Sidney Carroll;Robert Rossen,Paul Newman;Jackie Gleason;Piper Laurie,8.1,45836
+Black Swan,108,Drama;Mystery;Thriller,Darren Aronofsky,Mark Heyman;Andres Heinz,Natalie Portman;Mila Kunis;Vincent Cassel,8.1,399963
+Before Midnight,109,Drama;Romance,Richard Linklater,Richard Linklater;Julie Delpy,Ethan Hawke;Julie Delpy;Seamus Davey-Fitzpatrick,8.1,44270
+Rocky,119,Drama;Sport,John G. Avildsen,Sylvester Stallone,Sylvester Stallone;Talia Shire;Burt Young,8.1,236064
+Who's Afraid of Virginia Woolf?,131,Drama,Mike Nichols,Ernest Lehman,Elizabeth Taylor;Richard Burton;George Segal,8.2,40153
+In the Name of the Father,133,Biography;Drama;Thriller,Jim Sheridan,Gerry Conlon;Terry George,Daniel Day-Lewis;Pete Postlethwaite;Alison Crosbie,8.2,71533
+The Exorcist,122,Horror,William Friedkin,William Peter Blatty;William Peter Blatty,Ellen Burstyn;Max von Sydow;Linda Blair,8.0,226463
+The Man Who Shot Liberty Valance,123,Western,John Ford,James Warner Bellah;Willis Goldbeck,James Stewart;John Wayne;Vera Miles,8.1,42158
+Anatomy of a Murder,160,Crime;Drama;Mystery,Otto Preminger,Wendell Mayes;John D. Voelker,James Stewart;Lee Remick;Ben Gazzara,8.1,34272
+La Strada,108,Drama,Federico Fellini,Federico Fellini;Tullio Pinelli,Anthony Quinn;Giulietta Masina;Richard Basehart,8.2,34159
+Fanny och Alexander,188,Drama,Ingmar Bergman,Ingmar Bergman,Bertil Guve;Pernilla Allwin;Börje Ahlstedt,8.2,29246
+8½,138,Drama;Fantasy,Federico Fellini,Federico Fellini;Ennio Flaiano,Marcello Mastroianni;Anouk Aimée;Claudia Cardinale,8.2,56998
+Slumdog Millionaire,120,Drama;Romance;Thriller,Danny Boyle;Loveleen Tandan,Simon Beaufoy;Vikas Swarup,Dev Patel;Freida Pinto;Saurabh Shukla,8.1,455903
+The Manchurian Candidate,126,Mystery;Thriller,John Frankenheimer,Richard Condon;George Axelrod,Frank Sinatra;Laurence Harvey;Janet Leigh,8.1,54958
+Mou gaan dou,101,Crime;Mystery;Thriller,Wai-keung Lau;Alan Mak,Alan Mak;Felix Chong,Andy Lau;Tony Leung Chiu Wai;Anthony Wong Chau-Sang,8.2,67050
+"Monsters, Inc.",92,Animation;Adventure;Comedy,Pete Docter;David Silverman,Pete Docter;Jill Culton,Billy Crystal;John Goodman;Mary Gibbs,8.1,360399
+Stalag 17,120,Comedy;Drama;War,Billy Wilder,Billy Wilder;Edwin Blum,William Holden;Don Taylor;Otto Preminger,8.2,35013
+Barry Lyndon,184,Adventure;Drama;Romance,Stanley Kubrick,Stanley Kubrick;William Makepeace Thackeray,Ryan O'Neal;Marisa Berenson;Patrick Magee,8.1,72906
+Rope,80,Crime;Drama;Thriller,Alfred Hitchcock,Hume Cronyn;Patrick Hamilton,James Stewart;John Dall;Farley Granger,8.1,70116
+The Truman Show,103,Comedy;Drama;Sci-Fi,Peter Weir,Andrew Niccol,Jim Carrey;Ed Harris;Laura Linney,8.0,440949
+Life of Pi,127,Adventure;Drama;Fantasy,Ang Lee,Yann Martel;David Magee,Suraj Sharma;Irrfan Khan;Adil Hussain,8.1,286299
+Roman Holiday,118,Comedy;Drama;Romance,William Wyler,Dalton Trumbo;Ian McLellan Hunter,Gregory Peck;Audrey Hepburn;Eddie Albert,8.1,67598
+Pirates of the Caribbean: The Curse of the Black Pearl,143,Action;Adventure;Fantasy,Gore Verbinski,Ted Elliott;Terry Rossio,Johnny Depp;Geoffrey Rush;Orlando Bloom,8.1,556626
+The Wild Bunch,145,Western,Sam Peckinpah,Walon Green;Sam Peckinpah,William Holden;Ernest Borgnine;Robert Ryan,8.1,53002
+Salinui chueok,130,Crime;Drama;Mystery,Joon-ho Bong,Joon-ho Bong;Kwang-rim Kim,Kang-ho Song;Sang-kyung Kim;Roe-ha Kim,8.1,37477
+3 Idiots,170,Comedy;Drama;Romance,Rajkumar Hirani,Rajkumar Hirani;Abhijit Joshi,Aamir Khan;Madhavan;Mona Singh,8.5,96762
+Per un pugno di dollari,99,Western,Sergio Leone,Adriano Bolzoni;Víctor Andrés Catena,Clint Eastwood;Gian Maria Volonté;Marianne Koch,8.1,88931
+All Quiet on the Western Front,136,Drama;War,Lewis Milestone,Erich Maria Remarque;Maxwell Anderson,Lew Ayres;Louis Wolheim;John Wray,8.1,39870
+Jurassic Park,127,Adventure;Sci-Fi,Steven Spielberg,Michael Crichton;Michael Crichton,Sam Neill;Laura Dern;Jeff Goldblum,8.0,366746
+Incendies,139,Drama;Mystery;War,Denis Villeneuve,Valérie Beaugrand-Champagne;Wajdi Mouawad,Lubna Azabal;Mélissa Désormeaux-Poulin;Maxim Gaudette,8.2,42671
+Harry Potter and the Deathly Hallows: Part 2,130,Adventure;Fantasy;Mystery,David Yates,Steve Kloves;J.K. Rowling,Daniel Radcliffe;Emma Watson;Rupert Grint,8.1,333910
+Sleuth,138,Mystery;Thriller,Joseph L. Mankiewicz,Anthony Shaffer;Anthony Shaffer,Laurence Olivier;Michael Caine;Alec Cawthorne,8.1,31858
+Star Trek: The Future Begins,127,Action;Adventure;Sci-Fi,J.J. Abrams,Roberto Orci;Alex Kurtzman,Chris Pine;Zachary Quinto;Simon Pegg,8.1,389827
+Shutter Island,138,Drama;Mystery;Thriller,Martin Scorsese,Laeta Kalogridis;Dennis Lehane,Leonardo DiCaprio;Emily Mortimer;Mark Ruffalo,8.1,476308
+Yip Man,106,Action;Biography;Drama,Wilson Yip,Edmond Wong;Chan Tai-Li,Donnie Yen;Simon Yam;Siu-Wong Fan,8.1,96812
+Le scaphandre et le papillon,112,Biography;Drama,Julian Schnabel,Ronald Harwood;Jean-Dominique Bauby,Mathieu Amalric;Emmanuelle Seigner;Marie-Josée Croze,8.1,73819
+Tramlijn Begeerte,122,Drama,Elia Kazan,Tennessee Williams;Oscar Saul,Vivien Leigh;Marlon Brando;Kim Hunter,8.1,63177
+Ratatouille,111,Animation;Comedy;Family,Brad Bird;Jan Pinkava,Brad Bird;Jan Pinkava,Brad Garrett;Lou Romano;Patton Oswalt,8.0,334632
+Kaze no tani no Naushika,117,Animation;Action;Adventure,Hayao Miyazaki,Hayao Miyazaki;Hayao Miyazaki,Sumi Shimamoto;Mahito Tsujimura;Hisako Kyôda,8.2,57712
+Stalker,163,Drama;Sci-Fi,Andrei Tarkovsky,Arkadiy Strugatskiy;Boris Strugatskiy,Alisa Freyndlikh;Aleksandr Kaydanovskiy;Anatoliy Solonitsyn,8.2,46212
+Rain Man,133,Drama,Barry Levinson,Barry Morrow;Ronald Bass,Dustin Hoffman;Tom Cruise;Valeria Golino,8.0,299258
+Prisoners,153,Crime;Drama;Thriller,Denis Villeneuve,Aaron Guzikowski,Hugh Jackman;Jake Gyllenhaal;Viola Davis,8.1,148083
+La haine,98,Drama,Mathieu Kassovitz,Mathieu Kassovitz,Vincent Cassel;Hubert Koundé;Saïd Taghmaoui,8.1,69508
+District 9,112,Action;Sci-Fi;Thriller,Neill Blomkamp,Neill Blomkamp;Terri Tatchell,Sharlto Copley;David James;Jason Cope,8.0,409105
+De Hobbit: Een onverwachte reis,169,Adventure;Fantasy,Peter Jackson,Fran Walsh;Philippa Boyens,Martin Freeman;Ian McKellen;Richard Armitage,8.1,423009
+Bringing Up Baby,102,Comedy;Romance,Howard Hawks,Dudley Nichols;Hagar Wilde,Katharine Hepburn;Cary Grant;Charles Ruggles,8.1,37048
+Before Sunrise,105,Drama;Romance,Richard Linklater,Richard Linklater;Kim Krizan,Ethan Hawke;Julie Delpy;Andrea Eckert,8.1,113656
+Trois couleurs: Rouge,99,Drama;Mystery;Romance,Krzysztof Kieslowski,Krzysztof Kieslowski;Krzysztof Piesiewicz,Irène Jacob;Jean-Louis Trintignant;Frédérique Feder,8.1,46226
+Belle en het Beest,84,Animation;Family;Fantasy,Gary Trousdale;Kirk Wise,Linda Woolverton;Roger Allers,Paige O'Hara;Robby Benson;Richard White,8.1,200889
+Festen,105,Drama,Thomas Vinterberg,Thomas Vinterberg;Mogens Rukov,Ulrich Thomsen;Henning Moritzen;Thomas Bo Larsen,8.2,50790
+Rosemary's Baby,136,Drama;Horror;Mystery,Roman Polanski,Ira Levin;Roman Polanski,Mia Farrow;John Cassavetes;Ruth Gordon,8.0,108887
+Tenkû no shiro Rapyuta,124,Animation;Action;Adventure,Hayao Miyazaki,Hayao Miyazaki,Anna Paquin;James Van Der Beek;Cloris Leachman,8.1,58589
+Fa yeung nin wa,98,Drama;Romance,Kar Wai Wong,Kar Wai Wong,Tony Leung Chiu Wai;Maggie Cheung;Ping Lam Siu,8.1,53304
