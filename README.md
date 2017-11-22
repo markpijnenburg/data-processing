@@ -45,7 +45,12 @@ Assignment: Implement an interactive barchart using D3. No other libraries then 
 Barchart is based on the number of casualities in the last 50 years from mass shootings in the USA. The data is loaded via a JSON file. I also implemented the D3 tooltip as an interactive part. Outside of the assignment, I animated the barchart a little bit with the built-in ease function.
 
 ### Week 4
-N/A
+#### D3 Scatterplot
+
+Assignment: Create a scatterplot visualization of data using the D3 library. Add a legend using SVG.
+
+##### Summary
+The scatterplot is based on data from the Happy Planet Index. It shows the average life expectancy versus the happiness of people from countries around the world. The size of the dots in the scatterplot indicates the ecological footprint of that country. For more information about how the data is gathered and calculated, please see [https://happyplanetindex.org](https://happyplanetindex.org).
 
 ### Week 5
 N/A

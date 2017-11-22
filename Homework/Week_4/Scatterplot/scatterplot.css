@@ -1,0 +1,89 @@
+/*Name: Mark Pijnenburg
+Student number: 11841117
+Minor Programmeren
+University of Amsterdam*/
+
+body {
+  width: 60%;
+  margin: 0 auto;
+  font: 10px sans-serif;
+  background-color: whitesmoke;
+  text-align: center;
+}
+
+.scatterplot {
+  display: block;
+  margin: 0 auto;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.dot {
+  stroke: #000;
+}
+
+.legend-text {
+  font-weight: bold;
+}
+
+.label {
+  font-size: 15px;
+}
+
+/*Design of D3 tooltip*/
+.d3-tip {
+  font-size: 13px;
+  line-height: 1;
+  font-weight: bold;
+  font-family: sans-serif;
+  text-align: center;
+  padding: 4px;
+  background: rgba(33, 33, 33, 0.9);
+  color: #fff;
+  border-radius: 2px;
+}
+
+/*D3 tooltip text*/
+.d3-tip text {
+  font-size: 5px;
+  text-align: center;
+  color: black;
+}
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+  box-sizing: border-box;
+  display: inline;
+  font-size: 17px;
+  width: 100%;
+  line-height: 1;
+  color: black;
+  content: "\25BE";
+  position: absolute;
+  text-align: center;
+}
+
+/* Style northward tooltips differently */
+.d3-tip.n:after {
+  margin: -4px 0 0 0;
+  top: 100%;
+  left: 0;
+}
+
+h1, h2, p, .source {
+  margin-right: -60px;
+}
+
+.source {
+  font-size: 10px;
+  font-weight: normal;
+}
+
+p {
+  font-size: 12px;
+}
