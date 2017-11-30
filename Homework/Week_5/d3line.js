@@ -259,16 +259,16 @@ window.onload = function() {
       });
 
     // Check if user selects other year from dropdown menu
-    d3.selectAll("option")
-      .on("click", function() {
-        var date = this.getAttribute("value");
-        var str;
-        if (date == "2016") {
-          str = "stocks2016.json";
+    d3.select("#dropdown_year")
+      .on("change", function() {
+        var selectedDate = d3.select("#dropdown_year").node().value;
+        var dataset;
+        if (selectedDate == "2016") {
+          dataset = "stocks2016.json";
         } else {
-          str = "stocks2015.json";
+          dataset = "stocks2015.json";
         }
-        updateChart(str)
+        updateChart(dataset)
       });
 
     // Append footer underneath line chart with source
