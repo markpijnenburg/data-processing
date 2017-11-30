@@ -53,7 +53,12 @@ Assignment: Create a scatterplot visualization of data using the D3 library. Add
 The scatterplot is based on data from the Happy Planet Index. It shows the average life expectancy versus the happiness of people from countries around the world. The size of the dots in the scatterplot indicates the ecological footprint of that country. For more information about how the data is gathered and calculated, please see [https://happyplanetindex.org](https://happyplanetindex.org).
 
 ### Week 5
-N/A
+#### D3 Multi-line Chart
+
+Assignment: Create a multi-line chart in D3 based on you own dataset. The chart should contain a interactive component such as a crosshair, that shows the specific values for each line when hovering.
+
+##### Summary
+This multi-line chart is based on the stock data of a few tech companies, Microsoft, Netflix and Apple. The data is plotted into the chart, where the user is able to choose which year is displayed. Currently the chart contains data from 2015 and 2016.
 
 ### Week 6
 N/A

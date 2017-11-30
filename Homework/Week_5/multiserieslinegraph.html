@@ -1,0 +1,32 @@
+<!-- Name: Mark Pijnenburg
+Student number: 11841117
+Minor Programmeren
+University of Amsterdam -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>D3 Multi Series Line Graph | Tech company stock</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="d3.v3.min.js" charset="utf-8"></script>
+  <script src="d3line.js"></script>
+</head>
+<body>
+  <h1>Stock overview for tech companies (2015-2016)</h1>
+  <div>
+  <select autocomplete="off">
+    <option selected value="2016">
+      2016
+    </option>
+    <option value="2015">
+      2015
+    </option>
+  </select>
+</div>
+  <p>This multi-line chart shows the stock price for Apple, Microsoft and Netflix. The data is based on the NYSE, NASDAQ, and AMEX exchanges.</p>
+  <p>For all companies, the closing price on each date is used in this line chart. You can switch between years with the dropdown above.</p>
+  <svg></svg>
+
+</body>
+</html>
