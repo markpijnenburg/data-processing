@@ -4,6 +4,11 @@ This is the repository of Data Processing, part of the bachelor Minor Progamming
 
 [GitHub pages: https://markpijnenburg.github.io/dataprocessing/](https://markpijnenburg.github.io/dataprocessing/)
 
+### Design video
+You can find all our progress design reports [here] https://github.com/markpijnenburg/dataprocessing/tree/master/Design
+
+Our presentation video about Cyber Attacks is hosted on [YouTube] https://www.youtube.com/watch?v=ZdkXcLMvMu8
+
 ## Homework
 Homework assignments, divided by each course week.
 
@@ -68,6 +73,7 @@ N/A
 
 ### Week 8
 N/A
+
 
 
 ## Author(s)
