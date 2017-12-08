@@ -1,0 +1,20 @@
+/* Style for Custom Tooltip */
+div.tooltip {
+  position: absolute;
+  text-align: center;
+  padding: 4px;
+  background: #fff;
+  border: 0px;
+  pointer-events: none;
+}
+
+path:hover {
+    fill-opacity: .7;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
