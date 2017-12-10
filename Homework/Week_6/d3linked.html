@@ -12,7 +12,7 @@ University of Amsterdam -->
     <meta name="author" content="Mark Pijnenburg"><script src="d3.v3.min.js"></script>
     <script src="d3linked.js"></script>
     <script src="queue.v1.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="d3.tip.v0.6.3.js"></script>
     <title>D3 Linked Views</title>
 
     <!-- Bootstrap core CSS -->
@@ -20,6 +20,8 @@ University of Amsterdam -->
 
     <!-- Custom styles for this template -->
     <link href="dashboard.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
   </head>
 
   <body>
@@ -28,53 +30,37 @@ University of Amsterdam -->
       <a class="navbar-brand" href="#">D3 - Linked Views</a>
       <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
+        
       </button>
 
       <div class="collapse navbar-collapse text-right" id="navbarsExampleDefault">
-
-          <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
-      </div>
+            </div>
     </nav>
     </header>
 
     <div class="container-fluid">
-      <!-- <div class="row"> -->
-        <!-- <nav class="col-sm-3 col-md-2 d-none d-sm-block bg-light sidebar">
-          <ul class="nav nav-pills flex-column">
-            <li class="nav-item">
-              <a class="nav-link active" href="#">My Github <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#map">Data source</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Design Choices</a>
-            </li>
-          </ul>
-        </nav> -->
 
-        <main role="main" id="main">
-          <select style="float: right" autocomplete="off" id="dropdown_year">
-          <option value="2014">2014</option>
-          <option value="2013">2013</option>
-          <option value="2012">2012</option>
-          <option value="2011">2011</option>
-          <option value="2010">2010</option>
+            <a id="pagetitle"><h1 style="text-align: center; padding-top: 10px">Homicides in the USA (2014)</h1></a>
+            <h3 style="text-align: center; opacity: 0">Selected state: </h3>
+            <main role="main" id="main">
+              <div align="center">
+                <select autocomplete="off" id="dropdown_year">
+                <option value="2014">2014</option>
+                <option value="2013">2013</option>
+                <option value="2012">2012</option>
+                <option value="2011">2011</option>
+                <option value="2010">2010</option>
+                </select>
+              </div>
 
-          </select>
-            <a name="map"><h1 style="text-align: center">Homicides in the USA</h1></a>
+          <div class="wrapper" style="width: 100%">
+            <div id="usa-map" style="width: 100%; float: left;"></div>
+            <div id="barchart" style="width:0%; float: right;"></div>
+          </div>
 
 
-          <div id="usa-map"></div>
-          <!-- <h1>Taking a closer look</h1> -->
-          <div id="scatterplot"></div>
         </main>
-      <!-- </div> -->
     </div>
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
     <script src="jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery.min.js"><\/script>')</script>
     <script src="popper.min.js"></script>

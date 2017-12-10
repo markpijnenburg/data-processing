@@ -1,75 +1,91 @@
-window.onload = function () {
-  var scatterplotDrawn = 0
+/*
+Name: Mark Pijnenburg
+Student number: 11841117
+Minor Programmeren
+University of Amsterdam
+*/
 
-    // Width and height of map
-  var width = 1000
-  var height = 400
+window.onload = function () {
+  // Width and height of map
+  var width = 900;
+  // var height = 450;
 
   // D3 Projection
   var projection = d3.geo.albersUsa()
-    .scale([850])
-    .translate([width / 2, height / 2])
+    .scale([1000])
+    .translate([width / 2, 225]);
 
   // Define path generator
   var path = d3.geo.path()
-    .projection(projection)
+    .projection(projection);
+
+  // Define D3 tooltip
+  var tip = d3.tip().attr('class', 'd3-tip').offset([-12, 0])
+    // Show country name in tooltip
+    .html(function (d) {
+      return d.key + ' used: ' + d.values;
+    });
+
+  var clickedState;
+
+  var color = d3.scale.threshold()
+    .domain([20, 50, 100, 150, 200, 250, 300, 350, 400, 450, 500, 700, 1000])
+    .range(['#ffdbdb', '#f5caca', '#ecb9b9', '#e3a8a8', '#da9797', '#d18686', '#c87575', '#bf6565', '#b65454', '#ad4343', '#a43232', '#9b2121', '#921010', '#890000']);
 
   queue().defer(d3.json, 'us_states.json')
     .defer(d3.json, 'homicide_usa_2014.json')
-    .await(makeMapUSA)
+    .await(makeMapUSA);
 
   function mapHomicides (homicides) {
     return d3.nest().key(function (d) {
-      return d.State
+      return d.State;
     })
       .rollup(function (v) {
-        return v.length
+        return v.length;
       })
-      .map(homicides)
+      .map(homicides);
+  }
+
+  function mapWeapons (stateHomicides) {
+    return d3.nest().key(function (d) {
+      return d.Weapon;
+    })
+      .rollup(function (v) {
+        return v.length;
+      })
+      .entries(stateHomicides);
   }
 
   function mapHomicidesState (homicides) {
     return d3.nest().key(function (d) {
-      return d.State
+      return d.State;
     })
-      .map(homicides)
-  }
-
-  function mapColorScale (mappedHomicides) {
-    var lowestHomicides = d3.min(d3.values(mappedHomicides))
-    var highestHomicides = d3.max(d3.values(mappedHomicides))
-    return d3.scale.linear().domain([lowestHomicides, highestHomicides]).range(['#FFB2B2', '#FE0000'])
-  }
-
-  function scatterplotGenderColor (stateHomicides) {
-    return d3.scale.ordinal().domain(['Female', 'Male', 'Unknown']).range(['#FE86F9', '#39CCFF', '#000000'])
+      .map(homicides);
   }
 
   function makeMapUSA (error, states, homicides) {
     if (error) {
-      console.log('Could not load JSON file correctly')
-      d3.select('body').append('h1').html('Errow while loading data :(')
+      console.log('Could not load JSON file correctly');
+      d3.select('body').append('h1').html('Errow while loading data :(');
     }
-    var mappedHomicides = mapHomicides(homicides)
-    var mappedHomicidesState = mapHomicidesState(homicides)
-    var colorScale = mapColorScale(mappedHomicides)
+    var mappedHomicides = mapHomicides(homicides);
+    var mappedHomicidesState = mapHomicidesState(homicides);
 
     // Create SVG element and append map to the SVG
     var svg = d3.select('#usa-map')
       .append('div')
       .attr('class', 'main-content')
-      .append('g')
-      .attr('class', 'map')
       .append('svg')
       .attr('id', 'map')
       .attr('preserveAspectRatio', 'xMinYMin meet')
-      .attr('viewBox', '0 0 960 400')
+      .attr('viewBox', '0 0 900 450')
+      .attr('transform', 'translate(20,-90), scale(0.6)');
 
     // Append Div for tooltip to SVG
     var tooltip = d3.select('.main-content')
       .append('div')
       .attr('class', 'tooltip')
-      .style('opacity', 0)
+      .style('opacity', 0);
 
     // Bind the data to the SVG and create one path per GeoJSON feature
     svg.selectAll('path')
@@ -80,145 +96,162 @@ window.onload = function () {
       .style('stroke', '#fff')
       .style('stroke-width', '1')
       .style('fill', function (d) {
-        return colorScale(mappedHomicides[d.properties.name])
+        return color(mappedHomicides[d.properties.name]);
       })
       .on('mouseover', mouseover)
       .on('mousemove', mousemove)
       .on('mouseout', mouseout)
-      .on('click', mouseclick)
+      .on('click', mouseclick);
 
     function mouseclick (d) {
-      // console.log(Boolean(scatterplotDrawn) == false);
-      if (Boolean(scatterplotDrawn) === false) {
-        var drawn = 0
-      } else {
-        var drawn = 1
+      clickedState = d.properties.name;
+      d3.select('h3').html('Selected state: ' + clickedState);
+      d3.select('h3').transition().duration(300).style('opacity', 1);
+      if (d3.select('.barchartcanvas').empty()) {
+        d3.select('#usa-map')
+          .transition()
+          .duration(500)
+          .call(styleTween, 'width', '100%')
+          .transition()
+          .call(styleTween, 'width', '50%');
+
+        d3.select('#barchart')
+          .transition()
+          .duration(500)
+          .call(styleTween, 'width', '0%')
+          .transition()
+          .call(styleTween, 'width', '50%');
+
+        d3.select('#map')
+          .transition()
+          .delay(500)
+          .duration(500)
+          .attr('transform', 'translate(20,0)');
       }
-      linkedScatterplot(mappedHomicidesState[d.properties.name], drawn)
+      linkedBarChart(mappedHomicidesState[d.properties.name]);
+    }
+
+    function styleTween (transition, name, value) {
+      transition.styleTween(name, function () {
+        return d3.interpolate(this.style[name], value);
+      });
     }
 
     function mouseover () {
       tooltip.transition()
         .duration(200)
-        .style('opacity', '.9')
+        .style('opacity', '.9');
     }
 
     function mousemove (d) {
-      var numberOfHomicides = mappedHomicides[d.properties.name]
+      var numberOfHomicides = mappedHomicides[d.properties.name];
       if (numberOfHomicides == null) {
-        numberOfHomicides = 0
+        numberOfHomicides = 0;
       }
 
       tooltip.html(d.properties.name + '<br>Number of homicides: ' + '<b>' + numberOfHomicides + '</b>')
-        .style('left', (d3.event.pageX - 100) + 'px')
-        .style('top', (d3.event.pageY - 120) + 'px')
+        .style('left', (d3.event.pageX - 85) + 'px')
+        .style('top', (d3.event.pageY - 70) + 'px');
     }
 
     function mouseout () {
       tooltip.transition()
         .duration(500)
-        .style('opacity', 0)
+        .style('opacity', 0);
     }
 
     d3.select('#dropdown_year')
       .on('change', function () {
-        var selectedDate = d3.select('#dropdown_year').node().value
-        var dataset = 'homicide_usa_' + selectedDate + '.json'
+        var selectedDate = d3.select('#dropdown_year').node().value;
+        d3.select('h1').html('Homicides in the USA (' + selectedDate + ')');
+        var dataset = 'homicide_usa_' + selectedDate + '.json';
         queue().defer(d3.json, dataset)
-          .await(updateMap)
-      })
+          .await(updateMap);
+      });
 
     function updateMap (error, homicides) {
       if (error) {
-        console.log('Could not load JSON file correctly')
-        d3.select('body').append('h1').html('Errow while loading data :(')
+        console.log('Could not load JSON file correctly');
+        d3.select('body').append('h1').html('Errow while loading data :(');
       }
-      mappedHomicides = mapHomicides(homicides)
-      mappedHomicidesState = mapHomicidesState(homicides)
-      colorScale = mapColorScale(mappedHomicides)
-      svg = d3.select('.main-content').transition()
+      mappedHomicides = mapHomicides(homicides);
+      mappedHomicidesState = mapHomicidesState(homicides);
+      svg = d3.select('.main-content').transition();
       svg.selectAll('path')
         .duration(750)
         .style('fill', function (d) {
           if (mappedHomicides[d.properties.name] == null) {
-            return '#8e8686'
+            return '#8e8686';
           } else {
-            return colorScale(mappedHomicides[d.properties.name])
+            return color(mappedHomicides[d.properties.name]);
           }
-        })
+        });
+
+      if (!(d3.select('.barchartcanvas').empty())) {
+        linkedBarChart(mappedHomicidesState[clickedState]);
+      }
     }
   }
 
-  function convertData (stateHomicides) {
-    stateHomicides.forEach(function (d) {
-      d.Year = Number(+d.Year)
-      d.VictimAge = Number(+d.VictimAge)
-      d.PerpetratorAge = Number(+d.PerpetratorAge)
-    })
-    return stateHomicides
-  }
+  function linkedBarChart (stateHomicides) {
+    var usedWeapons = mapWeapons(stateHomicides);
+    var mostUsedWeapon = d3.max(usedWeapons, function (d) {
+      return d.values;
+    });
 
-  function linkedScatterplot (stateHomicides, drawn) {
-    // Convert certain strings to numbers
-    stateHomicides = convertData(stateHomicides)
-
-    var oldestPerpetrator = d3.max(stateHomicides, function (d) {
-      return d.PerpetratorAge
-    })
-    var oldestVictim = d3.max(stateHomicides, function (d) {
-      return d.VictimAge
-    })
-
-    // Width and height of map
     var margin = {
       top: 20,
       right: 10,
-      bottom: 50,
+      bottom: 95,
       left: 50
-    }
-    var widthScatterplot = 960 - margin.left - margin.right
-    var heightScatterplot = 500 - margin.top - margin.bottom
+    };
 
-    var x = d3.scale.linear().domain([0, oldestPerpetrator]).range([0, widthScatterplot])
-    var y = d3.scale.linear().domain([0, oldestVictim]).range([heightScatterplot, 0])
+    var widthBarChart = 850 - margin.left - margin.right;
+    var heightBarChart = 500 - margin.top - margin.bottom;
 
-    var xAxis = d3.svg.axis().scale(x).orient('bottom')
-    var yAxis = d3.svg.axis().scale(y).orient('left')
+    var x = d3.scale.ordinal().rangeRoundBands([0, widthBarChart], '.05');
+    var y = d3.scale.linear().range([heightBarChart, 0]);
 
-    var colorGender = scatterplotGenderColor(stateHomicides)
+    var xAxis = d3.svg.axis().scale(x).orient('bottom');
+    var yAxis = d3.svg.axis().scale(y).orient('left');
 
-
-    if (Boolean(drawn) === false) {
-      console.log('Draw new scatterplot!')
-      newScatterplot(stateHomicides)
+    if (d3.select('.barchartcanvas').empty()) {
+      newBarChart(usedWeapons);
     } else {
-      console.log('Update that scatterplot!')
-      updateScatterplot(stateHomicides)
+      updateBarChart(usedWeapons);
     }
 
-    function newScatterplot (stateHomicides) {
-      scatterplotDrawn = 1
-      var scatterplot = d3.select('#scatterplot')
-        .append('svg')
+    function newBarChart (usedWeapons) {
+      var svg = d3.select('#barchart').append('svg')
         .attr('preserveAspectRatio', 'xMinYMin meet')
-        .attr('viewBox', '0 0 960 500')
+        .attr('viewBox', '0 0 850 500')
         .append('g')
-        .attr('class', 'scatterplot-circles')
-        .attr('transform', 'translate(' + margin.left + ',' + margin.top + ')')
+        .attr('class', 'barchartcanvas')
+        .attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
+      x.domain(usedWeapons.map(function (d) {
+        return d.key;
+      }));
+      y.domain([0, mostUsedWeapon]);
 
-      scatterplot.append('g')
+      d3.select('.barchartcanvas').call(tip);
+
+      svg.append('g')
         .attr('class', 'x axis')
         .attr('id', 'xaxis')
-        .attr('transform', 'translate(0,' + heightScatterplot + ')')
+        .attr('transform', 'translate(0,' + heightBarChart + ')')
         .call(xAxis)
+        .selectAll('text')
+        .style('text-anchor', 'start')
+        .attr('transform', 'rotate(40)')
+        .attr('y', 8)
         .append('text')
         .attr('class', 'label')
-        .attr('x', widthScatterplot / 2)
+        .attr('x', widthBarChart / 2)
         .attr('y', 40)
         .style('text-anchor', 'middle')
-        .text('Perpetrator age in years')
+        .text('Weapon type');
 
-      scatterplot.append('g')
+      svg.append('g')
         .attr('class', 'y axis')
         .attr('id', 'yaxis')
         .attr('y', 10)
@@ -226,90 +259,75 @@ window.onload = function () {
         .append('text')
         .attr('class', 'label')
         .attr('transform', 'rotate(-90)')
-        .attr('x', -(heightScatterplot / 2))
+        .attr('x', -(heightBarChart / 2))
         .attr('y', -50)
         .attr('dy', '.71em')
         .style('text-anchor', 'middle')
-        .text('Victim age in years')
+        .text('No. of times used');
 
-      scatterplot.append('g')
-        .attr('class', 'scatterplot-canvas')
-
-      scatterplot.select('.scatterplot-canvas').selectAll('circle')
-        .data(stateHomicides)
-        .enter()
-        .append('circle')
-        .attr('class', 'circle')
-        .attr('fill', function (d) {
-          return colorGender(d.VictimSex)
+      svg.selectAll('bar')
+        .data(d3.values(usedWeapons))
+        .enter().append('rect')
+        .attr('class', 'bars')
+        .style('fill', '#C27878')
+        .attr('x', function (d) {
+          return x(d.key);
         })
-        .attr('cx', function (d) {
-          return x(d.PerpetratorAge)
+        .attr('width', x.rangeBand())
+        .attr('y', function (d) {
+          return y(d.values);
         })
-        .attr('cy', function (d) {
-          return y(d.VictimAge)
+        .attr('height', function (d) {
+          return heightBarChart - y(d.values);
         })
-        .attr('r', 3)
+        .on('mouseover', tip.show)
+        .on('mouseout', tip.hide);
     }
 
-    function updateScatterplot (stateHomicides) {
-      console.log(oldestVictim)
-      console.log(oldestPerpetrator)
+    function updateBarChart (usedWeapons) {
+      x.domain(usedWeapons.map(function (d) {
+        return d.key;
+      }));
+      y.domain([0, mostUsedWeapon]);
+      var svg = d3.select('.barchartcanvas');
 
-      d3.select('.scatterplot-canvas').selectAll('circle')
-        .data(stateHomicides)
+      svg.call(tip);
+
+      svg.select('#xaxis').transition().duration(600).call(xAxis).selectAll('text')
+        .style('text-anchor', 'start')
+        .attr('transform', 'rotate(40)')
+        .attr('y', 8);
+      svg.select('#yaxis').transition().duration(600).call(yAxis);
+
+      var bars = svg.selectAll('.bars').data(usedWeapons);
+
+      bars.exit()
         .transition()
-        .duration(1000)
-        .attr('cx', function (d) {
-          return x(d.PerpetratorAge)
-        })
-        .attr('cy', function (d) {
-          return y(d.VictimAge)
-        })
+        .duration(600)
+        .attr('y', y(0))
+        .attr('height', heightBarChart - y(0))
+        .remove();
 
-      d3.select('.scatterplot-canvas').selectAll('circle')
-        .data(stateHomicides)
-        .enter()
-        .append('circle')
-        .attr('class', 'circle')
-        .attr('fill-opacity', 0)
-        .attr('stroke-opacity', 0)
-        .attr('r', 0)
-        .attr('fill', function (d) {
-          return colorGender(d.VictimSex)
-        })
-        .transition()
-        .duration(1000)
-        .attr('fill-opacity', 1)
-        .attr('stroke-opacity', 1)
-        .attr('cx', function (d) {
-          return x(d.PerpetratorAge)
-        })
-        .attr('cy', function (d) {
-          return y(d.VictimAge)
-        })
-        .attr('r', 3)
+      bars.enter().append('rect')
+        .attr('class', 'bars')
+        .attr('y', y(0))
+        .style('fill', '#C27878')
+        .attr('height', heightBarChart - y(0))
+        .on('mouseover', tip.show)
+        .on('mouseout', tip.hide);
 
-      d3.selectAll('circle')
-        .data(stateHomicides)
-        .exit()
-        .attr('fill-opacity', 1)
-        .attr('stroke-opacity', 1)
-        .transition()
-        .duration(800)
-        .attr('fill-opacity', 0)
-        .attr('stroke-opacity', 0)
-        .remove()
-
-      d3.select('#xaxis')
-          .transition()
-          .duration(1000)
-          .call(xAxis)
-
-      d3.select('#yaxis')
-          .transition()
-          .duration(1000)
-          .call(yAxis)
+      bars.transition().duration(600)
+        .attr('x', function (d) {
+          return x(d.key);
+        })
+        .attr('width', x.rangeBand())
+        .attr('y', function (d) {
+          return y(d.values);
+        })
+        .style('fill', '#C27878')
+        .attr('height', function (d) {
+          return heightBarChart - y(d.values);
+        });
     }
   }
-}
+};
