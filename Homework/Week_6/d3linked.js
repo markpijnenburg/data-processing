@@ -160,14 +160,22 @@ window.onload = function () {
         .style('opacity', 0);
     }
 
-    d3.select('#dropdown_year')
-      .on('change', function () {
-        var selectedDate = d3.select('#dropdown_year').node().value;
-        d3.select('h1').html('Homicides in the USA (' + selectedDate + ')');
-        var dataset = 'homicide_usa_' + selectedDate + '.json';
-        queue().defer(d3.json, dataset)
-          .await(updateMap);
+    $('.dropdown-menu a').on('click', function () {
+      var selectedDate = $(this).text();
+      d3.select('h1').html('Homicides in the USA (' + selectedDate + ')');
+      var dataset = 'homicide_usa_' + selectedDate + '.json';
+      queue().defer(d3.json, dataset)
+        .await(updateMap);
       });
+
+    // d3.select('#dropdown_year')
+    //   .on('change', function () {
+    //     var selectedDate = d3.select('#dropdown_year').node().value;
+    //     d3.select('h1').html('Homicides in the USA (' + selectedDate + ')');
+    //     var dataset = 'homicide_usa_' + selectedDate + '.json';
+    //     queue().defer(d3.json, dataset)
+    //       .await(updateMap);
+    //   });
 
     function updateMap (error, homicides) {
       if (error) {
@@ -202,8 +210,8 @@ window.onload = function () {
     var margin = {
       top: 20,
       right: 10,
-      bottom: 95,
-      left: 50
+      bottom: 110,
+      left: 60
     };
 
     var widthBarChart = 850 - margin.left - margin.right;
@@ -243,11 +251,13 @@ window.onload = function () {
         .selectAll('text')
         .style('text-anchor', 'start')
         .attr('transform', 'rotate(40)')
-        .attr('y', 8)
+        .attr('y', 8);
+
+      svg.append('g')
         .append('text')
         .attr('class', 'label')
         .attr('x', widthBarChart / 2)
-        .attr('y', 40)
+        .attr('y', 470)
         .style('text-anchor', 'middle')
         .text('Weapon type');
 
@@ -260,7 +270,7 @@ window.onload = function () {
         .attr('class', 'label')
         .attr('transform', 'rotate(-90)')
         .attr('x', -(heightBarChart / 2))
-        .attr('y', -50)
+        .attr('y', -60)
         .attr('dy', '.71em')
         .style('text-anchor', 'middle')
         .text('No. of times used');
