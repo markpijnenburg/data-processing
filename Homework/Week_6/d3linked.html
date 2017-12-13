@@ -1,35 +1,40 @@
+<!doctype html>
 <!-- Name: Mark Pijnenburg
 Student number: 11841117
 Minor Programmeren
 University of Amsterdam -->
-
-<!doctype html>
 <html lang="en">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="D3 Linked views | University of Amsterdam">
-  <meta name="author" content="Mark Pijnenburg">
-  <script src="d3.v3.min.js"></script>
-  <script src="d3linked.js"></script>
-  <script src="queue.v1.min.js"></script>
-  <script src="d3.tip.v0.6.3.js"></script>
+  <meta name="author" content="Mark Pijnenburg (11841117)">
+  <script src="./js/d3.v3.min.js"></script>
+  <script src="./js/d3linked.js"></script>
+  <script src="./js/queue.v1.min.js"></script>
+  <script src="./js/d3.tip.v0.6.3.js"></script>
   <title>D3 Linked Views</title>
 
   <!-- Bootstrap core CSS -->
-  <link href="bootstrap_min.css" rel="stylesheet">
+  <link href="./style/bootstrap_min.css" rel="stylesheet">
 
   <!-- Custom styles for this template -->
-  <link href="dashboard.css" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="./style/dashboard.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./style/style.css">
+  <script src="./js/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script>
+    window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery.min.js"><\/script>')
+  </script>
+  <script src="./js/popper.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
 
 </head>
 
 <body>
   <header>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-      <a class="navbar-brand" href="#">D3 - Linked Views</a>
+      <a class="navbar-brand" style="color: white">D3 - Linked Views</a>
       <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
 
@@ -38,19 +43,19 @@ University of Amsterdam -->
       <div class="collapse navbar-collapse text-right" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#">Design Choices</a>
+            <a class="nav-link" href="#" target='_blank'>Design Choices</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Storytelling</a>
+            <a class="nav-link" href="https://www.kaggle.com/murderaccountability/homicide-reports" target='_blank'>Data Source</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="https://github.com/markpijnenburg">My GitHub</a>
+            <a class="nav-link" href="https://github.com/markpijnenburg" target='_blank'>My GitHub</a>
           </li>
         </ul>
         <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-item">Mark Pijnenburg</a>
+              <a class="nav-item" style="color: white">Mark Pijnenburg (11841117)</a>
             </li>
           </ul>
         </div>
@@ -62,32 +67,37 @@ University of Amsterdam -->
 
     <a id="pagetitle"><h1 style="text-align: center; padding-top: 10px">Homicides in the USA (2014)</h1></a>
     <h3 style="text-align: center; opacity: 0">Selected state: </h3>
-    <main role="main" id="main">
-      <div align="center" class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Choose year
-  </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item" href="#">2014</a>
-          <a class="dropdown-item" href="#">2013</a>
-          <a class="dropdown-item" href="#">2012</a>
-          <a class="dropdown-item" href="#">2011</a>
-          <a class="dropdown-item" href="#">2010</a>
+    <main id="main">
+      <div class="dropdown">
+        <select autocomplete="off" class="custom-select" id="dropdown_year">
+  <option value='2014'>2014</option>
+  <option value='2013'>2013</option>
+  <option value='2012'>2012</option>
+  <option value='2011'>2011</option>
+  <option value='2010'>2010</option>
+</select>
+        <button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#demo">The story</button>
+        <div id="demo" class="collapse">
+          <h2 style='position: relative; clear: both'>America's Gun Culture</h2>
+          <h3>🔫</h3>
+          <div style="width: 700px" class='storytelling'>
+            <p style='clear: both; position: relative; text-align: justify; text-justify: inter-word'>
+              The second amendment, the most (inf)famous section of the United States Constitution and surely the most discussed section. I personally strongly oppose the right to carry arms as a civilian. Many people die each year to gun violence in the USA, where
+              often legally bought firearms are used. There are 88 guns for every 100 people in the USA. Because of this easy (and legal) access to guns, terrible shootings happen. Recently I made a <a href="https://markpijnenburg.github.io/dataprocessing/Homework/Week_3/barchart.html"
+                target="_blank">barchart</a> off the number of casulties from mass shootings in the USA over the past 60 years. In the last couple of years the number is growing. In 2017 at the Las Vegas Shooting 59 people were killed and 546 injured during
+              a concert. In 2012, 20 children in the Sandy Hook elementary school were killed. These are some examples of horrible shootings occuring commonly. I don't understand that a first world country like the USA could let this happen. With this
+              visualization I want to make clear that the majority of the homicides commited in the USA, happen with firearms that are possed because of the second amendment. Hopefully sometime soon the people of the USA will be aware of this too, so
+              that something can be done about this madness.
+            </p>
+          </div>
         </div>
       </div>
-
       <div class="wrapper" style="width: 100%">
         <div id="usa-map" style="width: 100%; float: left;"></div>
         <div id="barchart" style="width:0%; float: right;"></div>
       </div>
     </main>
   </div>
-  <script src="jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script>
-    window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery.min.js"><\/script>')
-  </script>
-  <script src="popper.min.js"></script>
-  <script src="bootstrap.min.js"></script>
 </body>
 
 </html>
